@@ -3,38 +3,65 @@
         "kilroy": {
             "name": "James J. Kilroy",
             "pwd": "jjk",
-            "games": ["aaa"]
+            "games": [
+                "aaa"
+            ]
         },
         "alpha": {
             "name": "Alpha Apple",
             "pwd": "aa",
-            "games": ["aaa", "bbb"]
-
+            "games": [
+                "aaa",
+                "bbb"
+            ]
         },
         "beta": {
             "name": "Beta Berry",
             "pwd": "bb",
-            "games": ["aaa", "bbb"]
+            "games": [
+                "aaa",
+                "bbb"
+            ]
         }
     },
     "games": {
         "aaa": {
-            "users": [ "kilroy", "alpha" ],
+            "users": [
+                "kilroy",
+                "alpha"
+            ],
             "tower": {
                 "kilroy": [
-                    "asdfasdfasdfsadfa",
-                    "asdfasdfasdfsadfa",
-                    "asdfasdfasdfsadfa"
+                    [
+                        106000,
+                        1109,
+                        608537233
+                    ],
+                    [
+                        100001,
+                        1511,
+                        608537233
+                    ]
                 ],
                 "alpha": [
-                    "asdfasdfasdfsadfa",
-                    "asdfasdfasdfsadfa",
-                    "asdfasdfasdfsadfa"
+                    [
+                        100007,
+                        1202,
+                        608537233
+                    ],
+                    [
+                        100014,
+                        1206,
+                        608537233
+                    ]
                 ]
             }
         },
         "bbb": {
-            "users": [ "alpha", "beta" ]
+            "users": [
+                "alpha",
+                "beta"
+            ]
         }
     }
 }

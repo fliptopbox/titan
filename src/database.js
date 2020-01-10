@@ -97,35 +97,92 @@ alpha.games(); //?
 
 usersOnline(); //?
 
-const units = [
-    parseInt("6mf2h2w1", 36),
-    parseInt("1b3d1", 36)
-];
-units;
 
-Number(106000).toString(36); //?
-Number(100600).toString(36); //?
-Number(100060).toString(36); //?
-Number(100001).toString(36); //?
+function encodeUnit(tileId, iconId, creatures) {
 
-decodeUnit(units[0]); //?
-decodeUnit(units[1]); //?
+    /**!/
+    const u0 = encodeUnit(6000, 109, ["a", "a", "b", "b", "c"]);
+    const u1 = encodeUnit(1, 511, ["a", "a", "b", "b", "c"]);
 
-function decodeUnit(number) {
-    const b36 = Number(number).toString(36);
-    const parts = b36.match(/(^[0-9]+[mc]?)([0-9a-w]+$)/);
-    let [_, tile, creatures] = parts;
+    // u0 [ 106000, 1109, 608537233 ] 
+    // u1 [ 100001, 1511, 608537233 ] 
 
-    tile = /[mc]$/.test(tile) ? tile.replace(/m/, "000").replace(/c/, "00") : tile;
-    creatures = [].concat.apply([], creatures
+    /**/
+
+    const tileInt = 100000 + Number(tileId);
+    const iconInt = 1000 + Number(iconId);
+    const dict = {};
+    creatures.forEach(char => {
+        dict[char] = dict[char] || 0;
+        dict[char] += 1;
+    });
+    const summary = Object.keys(dict)
+        .map(key => `${key}${dict[key]}`)
+        .join("");
+
+    return [
+        tileInt,
+        iconInt,
+        parseInt(summary, 36)
+    ];
+
+}
+
+const u0 = encodeUnit(6000, 109, ["a", "a", "b", "b", "c"]);
+const u1 = encodeUnit(1, 511, ["a", "a", "b", "b", "c"]);
+u0;
+u1;
+decodeUnit(u0); //?
+decodeUnit(u1); //?
+
+function decodeUnit(array) {
+    let [tileInt, iconInt, unitInt] = array;
+
+    tileInt -= 100000;
+    iconInt -= 1000;
+    unitInt = unitInt.toString(36)
+
+    let unitArray = unitInt
         .split(/(?=[a-z][0-9])/)
-        .map(u => {
-            const char = u.split("");
-            return [...Array(Number(char[1]))].map(() => char[0]);
-        }));
+        .map(pair => {
+            let [char, count] = pair.split("");
+            return [...Array(Number(count))].map(() => char); //?
+        });
 
-    tile;
-    creatures;
+    return [tileInt, iconInt, [].concat.apply([], unitArray)];
+}
 
-    return b36;
+parseInt("a3b2", 36); //?
+
+function creatures() {
+
+    const characters = [
+        // char name, count, str, int, skill
+        // skill: 0, none, 1 range, 2 fly, 3 both
+        ["a", "Angel", 18],
+        ["b", "Archangel", 6],
+        ["c", "Behemoth", 18],
+        ["d", "Centaur", 25],
+        ["e", "Coloss", 10],
+        ["f", "Cyclop", 28],
+        ["g", "Dragon", 18],
+        ["h", "Gargoyle", 21],
+        ["i", "Giant", 18],
+        ["j", "Gorgon", 25],
+        ["k", "Griffon", 18],
+        ["l", "Guardian", 6],
+        ["m", "Hydra", 10],
+        ["n", "Lion", 28],
+        ["o", "Minotaur", 21],
+        ["p", "Ogre", 25],
+        ["q", "Ranger", 28],
+        ["r", "Serpent", 10],
+        ["s", "Titan", 6],
+        ["t", "Troll", 28],
+        ["u", "Unicorn", 12],
+        ["v", "Warbear", 21],
+        ["w", "Warlock", 6],
+        ["x", "Wyvern", 18],
+
+    ]
 }
