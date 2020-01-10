@@ -1,0 +1,40 @@
+{
+    "users": {
+        "kilroy": {
+            "name": "James J. Kilroy",
+            "pwd": "jjk",
+            "games": ["aaa"]
+        },
+        "alpha": {
+            "name": "Alpha Apple",
+            "pwd": "aa",
+            "games": ["aaa", "bbb"]
+
+        },
+        "beta": {
+            "name": "Beta Berry",
+            "pwd": "bb",
+            "games": ["aaa", "bbb"]
+        }
+    },
+    "games": {
+        "aaa": {
+            "users": [ "kilroy", "alpha" ],
+            "tower": {
+                "kilroy": [
+                    "asdfasdfasdfsadfa",
+                    "asdfasdfasdfsadfa",
+                    "asdfasdfasdfsadfa"
+                ],
+                "alpha": [
+                    "asdfasdfasdfsadfa",
+                    "asdfasdfasdfsadfa",
+                    "asdfasdfasdfsadfa"
+                ]
+            }
+        },
+        "bbb": {
+            "users": [ "alpha", "beta" ]
+        }
+    }
+}

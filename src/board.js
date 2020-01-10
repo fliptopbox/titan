@@ -1,19 +1,29 @@
+const fs = require("fs");
+
 let accumulate = 0;
 
 const metadata = createMetaData();
 const board = createBoard(metadata);
+let dest = "../json/titan-board.json";
 
-board.map(item => {
-    const { id, terrain, index, radius, latitude, rotation } = item;
-    return `${id} ${terrain.toUpperCase()} (${index}) [${radius}:${rotation}:${latitude}]`;
-}); //?
 
-function dice(n = 1) {
-    return [...Array(n)].map((_, i) => (((Math.random() * 60) % 6) + 1) >> 0);
+console.clear();
+console.log("\n\nCreate Static Titan JSON");
+
+if (process.argv[2]) dest = process.argv[2]
+
+storeData(board, dest);
+
+
+function storeData(data, path) {
+    try {
+        fs.writeFileSync(path, JSON.stringify(data));
+    } catch (err) {
+        console.error(err);
+    }
 }
 
 function createBoard(metadata) {
-    //
     return [].concat
         .apply(
             [],
@@ -140,83 +150,44 @@ function getHexSiblings(meta) {
     };
 }
 
-const tiles = [...board]; //?
+// function getTileById(id, collection) {
+//     return collection.filter(tile => {
+//         return tile.id === id;
+//     })[0];
+// }
 
-function getTileById(id, collection) {
-    return collection.filter(tile => {
-        return tile.id === id;
-    })[0];
-}
+// function getTileByIndex(index, collection) {
+//     return collection.filter(tile => tile.index === index)[0];
+// }
 
-function getTileByIndex(index, collection) {
-    return collection.filter(tile => tile.index === index)[0]; //?
-}
+// function getNextTiles(id, collection) {
+//     const { index, moves } = getTileById(id, collection);
+//     const [first, next] = moves;
+//     return { first, next, index };
+// }
 
-function getNextTiles(id, collection) {
-    const { index, moves } = getTileById(id, collection); //?
-    const values = moves.map(array => {
-        return array.map(obj => {
-            return obj(index);
-        });
-    });
-    const [first, next] = values;
-    return { first, next, index };
-}
+// function getDestinationId(fromId, diceRoll, collection, depth = 0, dest = [], previousId = null) {
+//     // clamp the dice value
+//     diceRoll = Math.max(diceRoll, 1);
+//     diceRoll = ((diceRoll - 1) % 6) + 1;
 
-const d = dice(); //?
+//     // prevent revese movements, back to initial tile
+//     previousId = previousId || fromId;
 
-getDestinationId("600", 1, tiles); //?
-getDestinationId("600", 3, tiles); //?
-getDestinationId("600", 6, tiles); //?
-// getDestinationId("3", 3, tiles); //?
+//     if (depth < diceRoll) {
+//         const method = depth === 0 ? "first" : "next";
 
-function getDestinationId(fromId, diceRoll, collection, depth = 0, dest = [], previousId = null) {
-    // clamp the dice value
-    diceRoll = Math.max(diceRoll, 1);
-    diceRoll = ((diceRoll - 1) % 6) + 1;
+//         getNextTiles(fromId, collection)
+//             [method].map(index => getTileByIndex(index, collection))
+//             .filter(item => item.id !== previousId)
+//             .forEach(tile => getDestinationId(tile.id, diceRoll, collection, depth + 1, dest, fromId));
 
-    // prevent revese movements, back to initial tile
-    previousId = previousId || fromId;
+//         return dest;
+//     }
 
-    if (depth < diceRoll) {
-        const method = depth === 0 ? "first" : "next";
-
-        getNextTiles(fromId, collection)
-            [method].map(index => getTileByIndex(index, collection))
-            .filter(item => item.id !== previousId)
-            .forEach(tile => getDestinationId(tile.id, diceRoll, collection, depth + 1, dest, fromId));
-
-        return dest;
-    }
-
-    dest.push(fromId);
-    return dest;
-}
-
-// getNextTiles("140", tiles); //?
-// getNextTiles("141", tiles); //?
-// getNextTiles("142", tiles); //?
-// getNextTiles("101", tiles); //?
-// getNextTiles("102", tiles); //?
-// getNextTiles("103", tiles); //?
-// getNextTiles("104", tiles); //?
-
-// getNextTiles("40", tiles); //?
-// getNextTiles("41", tiles); //?
-// getNextTiles("100", tiles); //?
-// getNextTiles("3", tiles); //?
-// getNextTiles("4", tiles); //?
-
-// getNextTiles("42", tiles); //?
-// getNextTiles("1", tiles); //?
-// getNextTiles("2", tiles); //?
-
-// getNextTiles("1000", tiles); //?
-// getNextTiles("2000", tiles); //?
-// getNextTiles("3000", tiles); //?
-// getNextTiles("4000", tiles); //?
-// getNextTiles("5000", tiles); //?
-// getNextTiles("6000", tiles); //?
+//     dest.push(fromId);
+//     return dest;
+// }
 
 function getMoveOptions(radius, segment) {
     // there are two rules
@@ -237,7 +208,7 @@ function getMoveOptions(radius, segment) {
         case 1: // mountains
             level = 6;
             hexes = 6;
-            moves = [[[() => segment * 3 + 4], [id => ((id - level) % level) + (level - 1), id => (id + 1) % level]]];
+            moves = [[[() => segment * 3 + 4], [() => relative(1, 0, 1), () => relative(1, 0, -1)]]];
             break;
 
         case 2:
@@ -261,8 +232,8 @@ function getMoveOptions(radius, segment) {
                 [[() => relative(3, 24, 2), () => relative(3, 6, 0)], [() => relative(3, 6, 0)]],
                 // tower
                 [
-                    [, () => relative(5, 24, 1), () => relative(5, 24, 3), () => relative(7, 54, 3)],
-                    [, () => relative(5, 24, 1), () => relative(5, 24, 3), () => relative(7, 54, 3)]
+                    [() => relative(5, 24, 1), () => relative(5, 24, 3), () => relative(7, 54, 3)],
+                    [() => relative(5, 24, 1), () => relative(5, 24, 3), () => relative(7, 54, 3)]
                 ],
                 // brush
                 [[() => relative(5, 24, 2), () => relative(5, 24, 4)], [() => relative(5, 24, 4)]],
@@ -291,7 +262,18 @@ function getMoveOptions(radius, segment) {
             ];
             break;
     }
-    return moves;
+
+    // render the lamdas to integers
+    // (so we can setialize to JSON)
+
+    const values = moves.map(item => {
+        return item.map(a => {
+            return a.map(fn => {
+                return fn(segment * 1000);
+            });
+        });
+    });
+    return values;
 }
 
 function getTileId(hexes, section, start = 0, shuffle = 0, cardinal = 0, offset = 42) {
@@ -330,19 +312,3 @@ function getTileId(hexes, section, start = 0, shuffle = 0, cardinal = 0, offset 
         return ((n + value) % offset) + start;
     });
 }
-/** *!/
-
-getNextTiles("42", tiles); //?
-getNextTiles("1", tiles); //?
-getNextTiles("2", tiles); //?
-
-getNextTiles("7", tiles); //?
-getNextTiles("8", tiles); //?
-getNextTiles("9", tiles); //?
-
-getNextTiles("35", tiles); //?
-getNextTiles("36", tiles); //?
-getNextTiles("37", tiles); //?
-
-
-/**/
