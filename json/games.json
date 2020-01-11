@@ -1,0 +1,46 @@
+{
+    "aaa": {
+        "state": {
+            "turn": 4,
+            "user": "kilroy"
+        },
+        "users": {
+            "kilroy": {
+                "tower": 1,
+                "score": 234,
+                "color": "red",
+                "alive": true,
+                "kills": ["delta"]
+            },
+            "alpha": {
+                "tower": 5,
+                "score": 34,
+                "color": "black",
+                "alive": true,
+                "kills": []
+            },
+            "delta": {
+                "tower": 3,
+                "score": 134,
+                "color": "blue",
+                "alive": false,
+                "kills": []
+            }
+        },
+        "deceased": [
+            { "centaur": 5 },
+            { "ogre": 8 },
+            { "gargoyle": 9 },
+            { "cyclops": 4 }
+        ],
+        "legions": [
+            [5, 6000, 509, { "centaur": 2, "gargoyle": 1, "titan": 1 }],
+            [5, 100, 511, { "ogre": 2, "gargoyle": 1, "angel": 1 }],
+            [1, 7, 102, { "centaur": 2, "gargoyle": 1, "titan": 1 }],
+            [1, 14, 106, { "ogre": 2, "gargoyle": 1, "angel": 1 }]
+        ]
+    },
+    "bbb": {
+        "users": ["alpha", "beta"]
+    }
+}

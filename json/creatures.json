@@ -1,0 +1,218 @@
+{
+    "angel": {
+        "total": 18,
+        "str": 6,
+        "int": 4,
+        "requires": [],
+        "native": [],
+        "fly": true,
+        "range": false
+    },
+    "archangel": {
+        "total": 6,
+        "str": 9,
+        "int": 4,
+        "requires": [],
+        "native": [],
+        "fly": true,
+        "range": true
+    },
+    "behemoth": {
+        "total": 18,
+        "str": 8,
+        "int": 3,
+        "requires": [{ "cyclops": 3 }],
+        "native": ["jungle"],
+        "fly": false,
+        "range": false
+    },
+    "centaur": {
+        "total": 25,
+        "str": 3,
+        "int": 4,
+        "requires": [],
+        "native": ["tower", "plains", "woods"],
+        "fly": false,
+        "range": false
+    },
+    "colossus": {
+        "total": 10,
+        "str": 10,
+        "int": 4,
+        "requires": [{ "giant": 2, "dragon": 2 }],
+        "native": ["tundra", "mountains"],
+        "fly": false,
+        "range": false
+    },
+    "cyclops": {
+        "total": 28,
+        "str": 9,
+        "int": 2,
+        "requires": [{ "gargoyle": 2 }],
+        "native": ["brush", "jungle"],
+        "fly": false,
+        "range": false
+    },
+    "dragon": {
+        "total": 18,
+        "str": 9,
+        "int": 3,
+        "requires": [{ "minotaur": 2 }],
+        "native": ["mountains"],
+        "fly": true,
+        "range": true
+    },
+    "gargoyle": {
+        "total": 21,
+        "str": 4,
+        "int": 3,
+        "requires": [],
+        "native": ["tower", "brush", "jungle"],
+        "fly": true,
+        "range": false
+    },
+    "giant": {
+        "total": 18,
+        "str": 7,
+        "int": 4,
+        "requires": [{ "warbear": 2 }],
+        "native": ["tundra"],
+        "fly": false,
+        "range": true
+    },
+    "gorgon": {
+        "total": 25,
+        "str": 6,
+        "int": 3,
+        "requires": [{ "cyclops": 2 }],
+        "native": ["brush"],
+        "fly": true,
+        "range": true
+    },
+    "griffon": {
+        "total": 18,
+        "str": 5,
+        "int": 4,
+        "requires": [{ "lion": 3 }],
+        "native": ["desert"],
+        "fly": true,
+        "range": false
+    },
+    "guardian": {
+        "total": 6,
+        "str": 12,
+        "int": 2,
+        "requires": [{ "centaur": 3 }, { "gargoyle": 3 }, { "ogre": 3 }],
+        "native": ["tower"],
+        "fly": true,
+        "range": false
+    },
+    "hydra": {
+        "total": 10,
+        "str": 10,
+        "int": 3,
+        "requires": [{ "griffon": 2 }, { "wyvern": 2 }],
+        "native": ["desert", "swamp"],
+        "fly": false,
+        "range": true
+    },
+    "lion": {
+        "total": 28,
+        "str": 5,
+        "int": 3,
+        "requires": [{ "centaur": 2 }],
+        "native": ["plains", "desert", "mountains"],
+        "fly": false,
+        "range": false
+    },
+    "minotaur": {
+        "total": 21,
+        "str": 4,
+        "int": 4,
+        "requires": [{ "ogre": 3 }],
+        "native": ["hills", "mountains"],
+        "fly": false,
+        "range": true
+    },
+    "ogre": {
+        "total": 25,
+        "str": 6,
+        "int": 2,
+        "requires": [],
+        "native": ["tower", "marsh", "hills"],
+        "fly": false,
+        "range": false
+    },
+    "ranger": {
+        "total": 28,
+        "str": 4,
+        "int": 4,
+        "requires": [{ "troll": 2 }, { "lion": 2 }],
+        "native": ["plains", "marsh"],
+        "fly": true,
+        "range": true
+    },
+    "serpent": {
+        "total": 10,
+        "str": 18,
+        "int": 2,
+        "requires": [{ "behemoth": 2 }],
+        "native": ["jungle"],
+        "fly": false,
+        "range": false
+    },
+    "titan": {
+        "total": 6,
+        "str": 0,
+        "int": 4,
+        "requires": [],
+        "native": [],
+        "fly": false,
+        "range": false
+    },
+    "troll": {
+        "total": 28,
+        "str": 8,
+        "int": 2,
+        "requires": [{ "ogre": 2 }],
+        "native": ["marsh", "swamp"],
+        "fly": false,
+        "range": false
+    },
+    "unicorn": {
+        "total": 12,
+        "str": 6,
+        "int": 4,
+        "requires": [{ "warbear": 2 }, { "minotaur": 2 }],
+        "native": ["woods", "hills"],
+        "fly": false,
+        "range": false
+    },
+    "warbear": {
+        "total": 21,
+        "str": 6,
+        "int": 3,
+        "requires": [{ "centaur": 2 }],
+        "native": ["tundra", "woods"],
+        "fly": false,
+        "range": false
+    },
+    "warlock": {
+        "total": 6,
+        "str": 5,
+        "int": 4,
+        "requires": [{ "titan": 1 }],
+        "native": ["tower"],
+        "fly": false,
+        "range": true
+    },
+    "wyvern": {
+        "total": 18,
+        "str": 7,
+        "int": 3,
+        "requires": [{ "troll": 3 }],
+        "native": ["swamp"],
+        "fly": true,
+        "range": true
+    }
+}

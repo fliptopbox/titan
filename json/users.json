@@ -1,0 +1,25 @@
+{
+    "kilroy": {
+        "name": "James J. Kilroy",
+        "pwd": "jjk",
+        "games": [
+            "aaa"
+        ]
+    },
+    "alpha": {
+        "name": "Alpha Apple",
+        "pwd": "aa",
+        "games": [
+            "aaa",
+            "bbb"
+        ]
+    },
+    "beta": {
+        "name": "Beta Berry",
+        "pwd": "bb",
+        "games": [
+            "aaa",
+            "bbb"
+        ]
+    }
+}

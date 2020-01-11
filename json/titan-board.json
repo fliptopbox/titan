@@ -2,15 +2,7 @@
     {
         "index": 0,
         "id": "1000",
-        "moves": [
-            [
-                7
-            ],
-            [
-                1,
-                5
-            ]
-        ],
+        "moves": [[7], [1, 5]],
         "terrain": "mountains",
         "radius": 1,
         "latitude": 0,
@@ -19,15 +11,7 @@
     {
         "index": 1,
         "id": "2000",
-        "moves": [
-            [
-                10
-            ],
-            [
-                2,
-                0
-            ]
-        ],
+        "moves": [[10], [2, 0]],
         "terrain": "tundra",
         "radius": 1,
         "latitude": 0,
@@ -36,15 +20,7 @@
     {
         "index": 2,
         "id": "3000",
-        "moves": [
-            [
-                13
-            ],
-            [
-                3,
-                1
-            ]
-        ],
+        "moves": [[13], [3, 1]],
         "terrain": "mountains",
         "radius": 1,
         "latitude": 0,
@@ -53,15 +29,7 @@
     {
         "index": 3,
         "id": "4000",
-        "moves": [
-            [
-                16
-            ],
-            [
-                4,
-                2
-            ]
-        ],
+        "moves": [[16], [4, 2]],
         "terrain": "tundra",
         "radius": 1,
         "latitude": 0,
@@ -70,15 +38,7 @@
     {
         "index": 4,
         "id": "5000",
-        "moves": [
-            [
-                19
-            ],
-            [
-                5,
-                3
-            ]
-        ],
+        "moves": [[19], [5, 3]],
         "terrain": "mountains",
         "radius": 1,
         "latitude": 0,
@@ -87,15 +47,7 @@
     {
         "index": 5,
         "id": "6000",
-        "moves": [
-            [
-                22
-            ],
-            [
-                0,
-                4
-            ]
-        ],
+        "moves": [[22], [0, 4]],
         "terrain": "tundra",
         "radius": 1,
         "latitude": 0,
@@ -104,15 +56,7 @@
     {
         "index": 6,
         "id": "42",
-        "moves": [
-            [
-                23,
-                7
-            ],
-            [
-                7
-            ]
-        ],
+        "moves": [[23, 7], [7]],
         "terrain": "swamp",
         "radius": 2,
         "latitude": 0,
@@ -121,15 +65,7 @@
     {
         "index": 7,
         "id": "1",
-        "moves": [
-            [
-                0,
-                8
-            ],
-            [
-                8
-            ]
-        ],
+        "moves": [[0, 8], [8]],
         "terrain": "plains",
         "radius": 2,
         "latitude": 1,
@@ -138,15 +74,7 @@
     {
         "index": 8,
         "id": "2",
-        "moves": [
-            [
-                27,
-                9
-            ],
-            [
-                27
-            ]
-        ],
+        "moves": [[27, 9], [27]],
         "terrain": "woods",
         "radius": 2,
         "latitude": 2,
@@ -155,15 +83,7 @@
     {
         "index": 9,
         "id": "7",
-        "moves": [
-            [
-                8,
-                10
-            ],
-            [
-                10
-            ]
-        ],
+        "moves": [[8, 10], [10]],
         "terrain": "desert",
         "radius": 2,
         "latitude": 0,
@@ -172,15 +92,7 @@
     {
         "index": 10,
         "id": "8",
-        "moves": [
-            [
-                1,
-                11
-            ],
-            [
-                11
-            ]
-        ],
+        "moves": [[1, 11], [11]],
         "terrain": "marsh",
         "radius": 2,
         "latitude": 1,
@@ -189,15 +101,7 @@
     {
         "index": 11,
         "id": "9",
-        "moves": [
-            [
-                32,
-                12
-            ],
-            [
-                32
-            ]
-        ],
+        "moves": [[32, 12], [32]],
         "terrain": "hills",
         "radius": 2,
         "latitude": 2,
@@ -206,15 +110,7 @@
     {
         "index": 12,
         "id": "14",
-        "moves": [
-            [
-                11,
-                13
-            ],
-            [
-                13
-            ]
-        ],
+        "moves": [[11, 13], [13]],
         "terrain": "swamp",
         "radius": 2,
         "latitude": 0,
@@ -223,15 +119,7 @@
     {
         "index": 13,
         "id": "15",
-        "moves": [
-            [
-                2,
-                14
-            ],
-            [
-                14
-            ]
-        ],
+        "moves": [[2, 14], [14]],
         "terrain": "plains",
         "radius": 2,
         "latitude": 1,
@@ -240,15 +128,7 @@
     {
         "index": 14,
         "id": "16",
-        "moves": [
-            [
-                37,
-                15
-            ],
-            [
-                37
-            ]
-        ],
+        "moves": [[37, 15], [37]],
         "terrain": "woods",
         "radius": 2,
         "latitude": 2,
@@ -257,15 +137,7 @@
     {
         "index": 15,
         "id": "21",
-        "moves": [
-            [
-                14,
-                16
-            ],
-            [
-                16
-            ]
-        ],
+        "moves": [[14, 16], [16]],
         "terrain": "desert",
         "radius": 2,
         "latitude": 0,
@@ -274,15 +146,7 @@
     {
         "index": 16,
         "id": "22",
-        "moves": [
-            [
-                3,
-                17
-            ],
-            [
-                17
-            ]
-        ],
+        "moves": [[3, 17], [17]],
         "terrain": "marsh",
         "radius": 2,
         "latitude": 1,
@@ -291,15 +155,7 @@
     {
         "index": 17,
         "id": "23",
-        "moves": [
-            [
-                42,
-                18
-            ],
-            [
-                42
-            ]
-        ],
+        "moves": [[42, 18], [42]],
         "terrain": "hills",
         "radius": 2,
         "latitude": 2,
@@ -308,15 +164,7 @@
     {
         "index": 18,
         "id": "28",
-        "moves": [
-            [
-                17,
-                19
-            ],
-            [
-                19
-            ]
-        ],
+        "moves": [[17, 19], [19]],
         "terrain": "swamp",
         "radius": 2,
         "latitude": 0,
@@ -325,15 +173,7 @@
     {
         "index": 19,
         "id": "29",
-        "moves": [
-            [
-                4,
-                20
-            ],
-            [
-                20
-            ]
-        ],
+        "moves": [[4, 20], [20]],
         "terrain": "plains",
         "radius": 2,
         "latitude": 1,
@@ -342,15 +182,7 @@
     {
         "index": 20,
         "id": "30",
-        "moves": [
-            [
-                47,
-                21
-            ],
-            [
-                47
-            ]
-        ],
+        "moves": [[47, 21], [47]],
         "terrain": "woods",
         "radius": 2,
         "latitude": 2,
@@ -359,15 +191,7 @@
     {
         "index": 21,
         "id": "35",
-        "moves": [
-            [
-                20,
-                22
-            ],
-            [
-                22
-            ]
-        ],
+        "moves": [[20, 22], [22]],
         "terrain": "desert",
         "radius": 2,
         "latitude": 0,
@@ -376,15 +200,7 @@
     {
         "index": 22,
         "id": "36",
-        "moves": [
-            [
-                5,
-                23
-            ],
-            [
-                23
-            ]
-        ],
+        "moves": [[5, 23], [23]],
         "terrain": "marsh",
         "radius": 2,
         "latitude": 1,
@@ -393,15 +209,7 @@
     {
         "index": 23,
         "id": "37",
-        "moves": [
-            [
-                52,
-                6
-            ],
-            [
-                52
-            ]
-        ],
+        "moves": [[52, 6], [52]],
         "terrain": "hills",
         "radius": 2,
         "latitude": 2,
@@ -410,14 +218,7 @@
     {
         "index": 24,
         "id": "40",
-        "moves": [
-            [
-                55
-            ],
-            [
-                25
-            ]
-        ],
+        "moves": [[55], [25]],
         "terrain": "jungle",
         "radius": 3,
         "latitude": 0,
@@ -426,15 +227,7 @@
     {
         "index": 25,
         "id": "41",
-        "moves": [
-            [
-                26,
-                6
-            ],
-            [
-                6
-            ]
-        ],
+        "moves": [[26, 6], [6]],
         "terrain": "marsh",
         "radius": 3,
         "latitude": 1,
@@ -444,16 +237,8 @@
         "index": 26,
         "id": "100",
         "moves": [
-            [
-                25,
-                27,
-                57
-            ],
-            [
-                25,
-                27,
-                57
-            ]
+            [25, 27, 57],
+            [25, 27, 57]
         ],
         "terrain": "tower",
         "radius": 3,
@@ -463,15 +248,7 @@
     {
         "index": 27,
         "id": "3",
-        "moves": [
-            [
-                26,
-                28
-            ],
-            [
-                28
-            ]
-        ],
+        "moves": [[26, 28], [28]],
         "terrain": "brush",
         "radius": 3,
         "latitude": 3,
@@ -480,14 +257,7 @@
     {
         "index": 28,
         "id": "4",
-        "moves": [
-            [
-                59
-            ],
-            [
-                29
-            ]
-        ],
+        "moves": [[59], [29]],
         "terrain": "hills",
         "radius": 3,
         "latitude": 4,
@@ -496,14 +266,7 @@
     {
         "index": 29,
         "id": "5",
-        "moves": [
-            [
-                62
-            ],
-            [
-                30
-            ]
-        ],
+        "moves": [[62], [30]],
         "terrain": "jungle",
         "radius": 3,
         "latitude": 0,
@@ -512,15 +275,7 @@
     {
         "index": 30,
         "id": "6",
-        "moves": [
-            [
-                29,
-                9
-            ],
-            [
-                9
-            ]
-        ],
+        "moves": [[29, 9], [9]],
         "terrain": "plains",
         "radius": 3,
         "latitude": 1,
@@ -530,16 +285,8 @@
         "index": 31,
         "id": "200",
         "moves": [
-            [
-                30,
-                32,
-                64
-            ],
-            [
-                30,
-                32,
-                64
-            ]
+            [30, 32, 64],
+            [30, 32, 64]
         ],
         "terrain": "tower",
         "radius": 3,
@@ -549,15 +296,7 @@
     {
         "index": 32,
         "id": "10",
-        "moves": [
-            [
-                31,
-                33
-            ],
-            [
-                33
-            ]
-        ],
+        "moves": [[31, 33], [33]],
         "terrain": "brush",
         "radius": 3,
         "latitude": 3,
@@ -566,14 +305,7 @@
     {
         "index": 33,
         "id": "11",
-        "moves": [
-            [
-                66
-            ],
-            [
-                34
-            ]
-        ],
+        "moves": [[66], [34]],
         "terrain": "woods",
         "radius": 3,
         "latitude": 4,
@@ -582,14 +314,7 @@
     {
         "index": 34,
         "id": "12",
-        "moves": [
-            [
-                69
-            ],
-            [
-                35
-            ]
-        ],
+        "moves": [[69], [35]],
         "terrain": "jungle",
         "radius": 3,
         "latitude": 0,
@@ -598,15 +323,7 @@
     {
         "index": 35,
         "id": "13",
-        "moves": [
-            [
-                32,
-                12
-            ],
-            [
-                12
-            ]
-        ],
+        "moves": [[32, 12], [12]],
         "terrain": "marsh",
         "radius": 3,
         "latitude": 1,
@@ -616,16 +333,8 @@
         "index": 36,
         "id": "300",
         "moves": [
-            [
-                35,
-                37,
-                71
-            ],
-            [
-                35,
-                37,
-                71
-            ]
+            [35, 37, 71],
+            [35, 37, 71]
         ],
         "terrain": "tower",
         "radius": 3,
@@ -635,15 +344,7 @@
     {
         "index": 37,
         "id": "17",
-        "moves": [
-            [
-                36,
-                38
-            ],
-            [
-                38
-            ]
-        ],
+        "moves": [[36, 38], [38]],
         "terrain": "brush",
         "radius": 3,
         "latitude": 3,
@@ -652,14 +353,7 @@
     {
         "index": 38,
         "id": "18",
-        "moves": [
-            [
-                73
-            ],
-            [
-                39
-            ]
-        ],
+        "moves": [[73], [39]],
         "terrain": "hills",
         "radius": 3,
         "latitude": 4,
@@ -668,14 +362,7 @@
     {
         "index": 39,
         "id": "19",
-        "moves": [
-            [
-                76
-            ],
-            [
-                40
-            ]
-        ],
+        "moves": [[76], [40]],
         "terrain": "jungle",
         "radius": 3,
         "latitude": 0,
@@ -684,15 +371,7 @@
     {
         "index": 40,
         "id": "20",
-        "moves": [
-            [
-                35,
-                15
-            ],
-            [
-                15
-            ]
-        ],
+        "moves": [[35, 15], [15]],
         "terrain": "plains",
         "radius": 3,
         "latitude": 1,
@@ -702,16 +381,8 @@
         "index": 41,
         "id": "400",
         "moves": [
-            [
-                40,
-                42,
-                78
-            ],
-            [
-                40,
-                42,
-                78
-            ]
+            [40, 42, 78],
+            [40, 42, 78]
         ],
         "terrain": "tower",
         "radius": 3,
@@ -721,15 +392,7 @@
     {
         "index": 42,
         "id": "24",
-        "moves": [
-            [
-                41,
-                43
-            ],
-            [
-                43
-            ]
-        ],
+        "moves": [[41, 43], [43]],
         "terrain": "brush",
         "radius": 3,
         "latitude": 3,
@@ -738,14 +401,7 @@
     {
         "index": 43,
         "id": "25",
-        "moves": [
-            [
-                80
-            ],
-            [
-                44
-            ]
-        ],
+        "moves": [[80], [44]],
         "terrain": "woods",
         "radius": 3,
         "latitude": 4,
@@ -754,14 +410,7 @@
     {
         "index": 44,
         "id": "26",
-        "moves": [
-            [
-                83
-            ],
-            [
-                45
-            ]
-        ],
+        "moves": [[83], [45]],
         "terrain": "jungle",
         "radius": 3,
         "latitude": 0,
@@ -770,15 +419,7 @@
     {
         "index": 45,
         "id": "27",
-        "moves": [
-            [
-                38,
-                18
-            ],
-            [
-                18
-            ]
-        ],
+        "moves": [[38, 18], [18]],
         "terrain": "marsh",
         "radius": 3,
         "latitude": 1,
@@ -788,16 +429,8 @@
         "index": 46,
         "id": "500",
         "moves": [
-            [
-                45,
-                47,
-                85
-            ],
-            [
-                45,
-                47,
-                85
-            ]
+            [45, 47, 85],
+            [45, 47, 85]
         ],
         "terrain": "tower",
         "radius": 3,
@@ -807,15 +440,7 @@
     {
         "index": 47,
         "id": "31",
-        "moves": [
-            [
-                46,
-                48
-            ],
-            [
-                48
-            ]
-        ],
+        "moves": [[46, 48], [48]],
         "terrain": "brush",
         "radius": 3,
         "latitude": 3,
@@ -824,14 +449,7 @@
     {
         "index": 48,
         "id": "32",
-        "moves": [
-            [
-                87
-            ],
-            [
-                49
-            ]
-        ],
+        "moves": [[87], [49]],
         "terrain": "hills",
         "radius": 3,
         "latitude": 4,
@@ -840,14 +458,7 @@
     {
         "index": 49,
         "id": "33",
-        "moves": [
-            [
-                90
-            ],
-            [
-                50
-            ]
-        ],
+        "moves": [[90], [50]],
         "terrain": "jungle",
         "radius": 3,
         "latitude": 0,
@@ -856,15 +467,7 @@
     {
         "index": 50,
         "id": "34",
-        "moves": [
-            [
-                41,
-                21
-            ],
-            [
-                21
-            ]
-        ],
+        "moves": [[41, 21], [21]],
         "terrain": "plains",
         "radius": 3,
         "latitude": 1,
@@ -874,16 +477,8 @@
         "index": 51,
         "id": "600",
         "moves": [
-            [
-                50,
-                52,
-                92
-            ],
-            [
-                50,
-                52,
-                92
-            ]
+            [50, 52, 92],
+            [50, 52, 92]
         ],
         "terrain": "tower",
         "radius": 3,
@@ -893,15 +488,7 @@
     {
         "index": 52,
         "id": "38",
-        "moves": [
-            [
-                51,
-                53
-            ],
-            [
-                53
-            ]
-        ],
+        "moves": [[51, 53], [53]],
         "terrain": "brush",
         "radius": 3,
         "latitude": 3,
@@ -910,14 +497,7 @@
     {
         "index": 53,
         "id": "39",
-        "moves": [
-            [
-                94
-            ],
-            [
-                24
-            ]
-        ],
+        "moves": [[94], [24]],
         "terrain": "woods",
         "radius": 3,
         "latitude": 4,
@@ -926,14 +506,7 @@
     {
         "index": 54,
         "id": "140",
-        "moves": [
-            [
-                95
-            ],
-            [
-                95
-            ]
-        ],
+        "moves": [[95], [95]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 0,
@@ -942,15 +515,7 @@
     {
         "index": 55,
         "id": "141",
-        "moves": [
-            [
-                24,
-                54
-            ],
-            [
-                54
-            ]
-        ],
+        "moves": [[24, 54], [54]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 1,
@@ -959,14 +524,7 @@
     {
         "index": 56,
         "id": "142",
-        "moves": [
-            [
-                55
-            ],
-            [
-                55
-            ]
-        ],
+        "moves": [[55], [55]],
         "terrain": "swamp",
         "radius": 4,
         "latitude": 2,
@@ -975,15 +533,7 @@
     {
         "index": 57,
         "id": "101",
-        "moves": [
-            [
-                26,
-                56
-            ],
-            [
-                56
-            ]
-        ],
+        "moves": [[26, 56], [56]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 3,
@@ -992,14 +542,7 @@
     {
         "index": 58,
         "id": "102",
-        "moves": [
-            [
-                57
-            ],
-            [
-                57
-            ]
-        ],
+        "moves": [[57], [57]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 4,
@@ -1008,15 +551,7 @@
     {
         "index": 59,
         "id": "103",
-        "moves": [
-            [
-                28,
-                58
-            ],
-            [
-                58
-            ]
-        ],
+        "moves": [[28, 58], [58]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 5,
@@ -1025,14 +560,7 @@
     {
         "index": 60,
         "id": "104",
-        "moves": [
-            [
-                59
-            ],
-            [
-                59
-            ]
-        ],
+        "moves": [[59], [59]],
         "terrain": "jungle",
         "radius": 4,
         "latitude": 6,
@@ -1041,14 +569,7 @@
     {
         "index": 61,
         "id": "105",
-        "moves": [
-            [
-                60
-            ],
-            [
-                60
-            ]
-        ],
+        "moves": [[60], [60]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 0,
@@ -1057,15 +578,7 @@
     {
         "index": 62,
         "id": "106",
-        "moves": [
-            [
-                29,
-                61
-            ],
-            [
-                61
-            ]
-        ],
+        "moves": [[29, 61], [61]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 1,
@@ -1074,14 +587,7 @@
     {
         "index": 63,
         "id": "107",
-        "moves": [
-            [
-                62
-            ],
-            [
-                62
-            ]
-        ],
+        "moves": [[62], [62]],
         "terrain": "jungle",
         "radius": 4,
         "latitude": 2,
@@ -1090,15 +596,7 @@
     {
         "index": 64,
         "id": "108",
-        "moves": [
-            [
-                31,
-                63
-            ],
-            [
-                63
-            ]
-        ],
+        "moves": [[31, 63], [63]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 3,
@@ -1107,14 +605,7 @@
     {
         "index": 65,
         "id": "109",
-        "moves": [
-            [
-                64
-            ],
-            [
-                64
-            ]
-        ],
+        "moves": [[64], [64]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 4,
@@ -1123,15 +614,7 @@
     {
         "index": 66,
         "id": "110",
-        "moves": [
-            [
-                33,
-                65
-            ],
-            [
-                65
-            ]
-        ],
+        "moves": [[33, 65], [65]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 5,
@@ -1140,14 +623,7 @@
     {
         "index": 67,
         "id": "111",
-        "moves": [
-            [
-                66
-            ],
-            [
-                66
-            ]
-        ],
+        "moves": [[66], [66]],
         "terrain": "desert",
         "radius": 4,
         "latitude": 6,
@@ -1156,14 +632,7 @@
     {
         "index": 68,
         "id": "112",
-        "moves": [
-            [
-                67
-            ],
-            [
-                67
-            ]
-        ],
+        "moves": [[67], [67]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 0,
@@ -1172,15 +641,7 @@
     {
         "index": 69,
         "id": "113",
-        "moves": [
-            [
-                34,
-                68
-            ],
-            [
-                68
-            ]
-        ],
+        "moves": [[34, 68], [68]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 1,
@@ -1189,14 +650,7 @@
     {
         "index": 70,
         "id": "114",
-        "moves": [
-            [
-                69
-            ],
-            [
-                69
-            ]
-        ],
+        "moves": [[69], [69]],
         "terrain": "swamp",
         "radius": 4,
         "latitude": 2,
@@ -1205,15 +659,7 @@
     {
         "index": 71,
         "id": "115",
-        "moves": [
-            [
-                36,
-                70
-            ],
-            [
-                70
-            ]
-        ],
+        "moves": [[36, 70], [70]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 3,
@@ -1222,14 +668,7 @@
     {
         "index": 72,
         "id": "116",
-        "moves": [
-            [
-                71
-            ],
-            [
-                71
-            ]
-        ],
+        "moves": [[71], [71]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 4,
@@ -1238,15 +677,7 @@
     {
         "index": 73,
         "id": "117",
-        "moves": [
-            [
-                38,
-                72
-            ],
-            [
-                72
-            ]
-        ],
+        "moves": [[38, 72], [72]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 5,
@@ -1255,14 +686,7 @@
     {
         "index": 74,
         "id": "118",
-        "moves": [
-            [
-                73
-            ],
-            [
-                73
-            ]
-        ],
+        "moves": [[73], [73]],
         "terrain": "jungle",
         "radius": 4,
         "latitude": 6,
@@ -1271,14 +695,7 @@
     {
         "index": 75,
         "id": "119",
-        "moves": [
-            [
-                74
-            ],
-            [
-                74
-            ]
-        ],
+        "moves": [[74], [74]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 0,
@@ -1287,15 +704,7 @@
     {
         "index": 76,
         "id": "120",
-        "moves": [
-            [
-                39,
-                75
-            ],
-            [
-                75
-            ]
-        ],
+        "moves": [[39, 75], [75]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 1,
@@ -1304,14 +713,7 @@
     {
         "index": 77,
         "id": "121",
-        "moves": [
-            [
-                76
-            ],
-            [
-                76
-            ]
-        ],
+        "moves": [[76], [76]],
         "terrain": "jungle",
         "radius": 4,
         "latitude": 2,
@@ -1320,15 +722,7 @@
     {
         "index": 78,
         "id": "122",
-        "moves": [
-            [
-                41,
-                77
-            ],
-            [
-                77
-            ]
-        ],
+        "moves": [[41, 77], [77]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 3,
@@ -1337,14 +731,7 @@
     {
         "index": 79,
         "id": "123",
-        "moves": [
-            [
-                78
-            ],
-            [
-                78
-            ]
-        ],
+        "moves": [[78], [78]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 4,
@@ -1353,15 +740,7 @@
     {
         "index": 80,
         "id": "124",
-        "moves": [
-            [
-                43,
-                79
-            ],
-            [
-                79
-            ]
-        ],
+        "moves": [[43, 79], [79]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 5,
@@ -1370,14 +749,7 @@
     {
         "index": 81,
         "id": "125",
-        "moves": [
-            [
-                80
-            ],
-            [
-                80
-            ]
-        ],
+        "moves": [[80], [80]],
         "terrain": "desert",
         "radius": 4,
         "latitude": 6,
@@ -1386,14 +758,7 @@
     {
         "index": 82,
         "id": "126",
-        "moves": [
-            [
-                81
-            ],
-            [
-                81
-            ]
-        ],
+        "moves": [[81], [81]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 0,
@@ -1402,15 +767,7 @@
     {
         "index": 83,
         "id": "127",
-        "moves": [
-            [
-                44,
-                82
-            ],
-            [
-                82
-            ]
-        ],
+        "moves": [[44, 82], [82]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 1,
@@ -1419,14 +776,7 @@
     {
         "index": 84,
         "id": "128",
-        "moves": [
-            [
-                83
-            ],
-            [
-                83
-            ]
-        ],
+        "moves": [[83], [83]],
         "terrain": "swamp",
         "radius": 4,
         "latitude": 2,
@@ -1435,15 +785,7 @@
     {
         "index": 85,
         "id": "129",
-        "moves": [
-            [
-                46,
-                84
-            ],
-            [
-                84
-            ]
-        ],
+        "moves": [[46, 84], [84]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 3,
@@ -1452,14 +794,7 @@
     {
         "index": 86,
         "id": "130",
-        "moves": [
-            [
-                85
-            ],
-            [
-                85
-            ]
-        ],
+        "moves": [[85], [85]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 4,
@@ -1468,15 +803,7 @@
     {
         "index": 87,
         "id": "131",
-        "moves": [
-            [
-                48,
-                86
-            ],
-            [
-                86
-            ]
-        ],
+        "moves": [[48, 86], [86]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 5,
@@ -1485,14 +812,7 @@
     {
         "index": 88,
         "id": "132",
-        "moves": [
-            [
-                87
-            ],
-            [
-                87
-            ]
-        ],
+        "moves": [[87], [87]],
         "terrain": "jungle",
         "radius": 4,
         "latitude": 6,
@@ -1501,14 +821,7 @@
     {
         "index": 89,
         "id": "133",
-        "moves": [
-            [
-                88
-            ],
-            [
-                88
-            ]
-        ],
+        "moves": [[88], [88]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 0,
@@ -1517,15 +830,7 @@
     {
         "index": 90,
         "id": "134",
-        "moves": [
-            [
-                49,
-                89
-            ],
-            [
-                89
-            ]
-        ],
+        "moves": [[49, 89], [89]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 1,
@@ -1534,14 +839,7 @@
     {
         "index": 91,
         "id": "135",
-        "moves": [
-            [
-                90
-            ],
-            [
-                90
-            ]
-        ],
+        "moves": [[90], [90]],
         "terrain": "jungle",
         "radius": 4,
         "latitude": 2,
@@ -1550,15 +848,7 @@
     {
         "index": 92,
         "id": "136",
-        "moves": [
-            [
-                51,
-                91
-            ],
-            [
-                91
-            ]
-        ],
+        "moves": [[51, 91], [91]],
         "terrain": "marsh",
         "radius": 4,
         "latitude": 3,
@@ -1567,14 +857,7 @@
     {
         "index": 93,
         "id": "137",
-        "moves": [
-            [
-                92
-            ],
-            [
-                92
-            ]
-        ],
+        "moves": [[92], [92]],
         "terrain": "brush",
         "radius": 4,
         "latitude": 4,
@@ -1583,15 +866,7 @@
     {
         "index": 94,
         "id": "138",
-        "moves": [
-            [
-                53,
-                93
-            ],
-            [
-                93
-            ]
-        ],
+        "moves": [[53, 93], [93]],
         "terrain": "plains",
         "radius": 4,
         "latitude": 5,
@@ -1600,14 +875,7 @@
     {
         "index": 95,
         "id": "139",
-        "moves": [
-            [
-                94
-            ],
-            [
-                94
-            ]
-        ],
+        "moves": [[94], [94]],
         "terrain": "desert",
         "radius": 4,
         "latitude": 6,
