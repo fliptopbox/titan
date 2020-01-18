@@ -8,7 +8,8 @@ function hexagon(
   terrain = "plains",
   creature = "none",
   damage = 50,
-  parent
+  parent,
+  state
 ) {
   const container = document.createElement("div");
   const hex = document.createElement("div");
@@ -34,7 +35,13 @@ function hexagon(
 
   // container.innerHTML = "&#x2B22;";
   loc.innerHTML = `${id}`;
+  unit.id = `${id}`
   unit.innerHTML = getUnit(creature, damage, color);
+  unit.onclick = (e) => {
+    console.log(e.currentTarget, state);
+
+
+  }
 
   // hex.append(loc);
   hex.append(loc);
@@ -65,7 +72,6 @@ function getPositionCoord(id, width = 97, height = 90) {
 
 function getUnit(creature, health = 50, color = "#00ff00") {
   if (creature === "none" || !creature) return "";
-  console.log(222, creature, health)
 
   const unit = creatures(creature);
   const { svg, power } = unit;

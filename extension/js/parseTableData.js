@@ -17,6 +17,7 @@ function parseTableData(table) {
 
   let data = {
     header: header.innerText,
+    id: header.innerText.toLowerCase(),
     color,
     icon,
     pointValue: 0,
@@ -24,8 +25,16 @@ function parseTableData(table) {
   };
   let rows = table.children[2].getElementsByTagName("tbody")[0].rows;
 
+
+
   for (var i = 0; i < rows.length; i++) {
+    let element = null;
     const [creature, latlong, damage = null] = rows[i].cells;
+
+    // Preserve the A if there is one
+    if(creature.children.length && creature.children[0].nodeName === "A") {
+      element = creature.children[0];
+    }
 
     // last row only has 2 cells, and it's the point value
     if (/point/i.test(creature.innerText)) {
@@ -42,6 +51,8 @@ function parseTableData(table) {
       creature: creature.innerText,
       latlong: latlong.innerText,
       color,
+      owner: data.id,
+      element,
       damage: Number(damage.innerText) + 0
     });
   }

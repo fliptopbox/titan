@@ -12,7 +12,7 @@ console.log("content >> module.js");
 
 // const body = document.querySelector('body');
 // import getStaticHtml from "./getStaticHtml.js";
-// import parseTableData from "./parseTableData.js";
+import parseTableData from "./parseTableData.js";
 // import terrains from "./terrain/index.js";
 import hexagon from "./hexagon.js";
 import ascii from "./ascii.js";
@@ -24,6 +24,12 @@ import ascii from "./ascii.js";
 init();
 
 function init() {
+    // Only execute of specific pages
+    // (blacklist)
+    if (/game.asp$/i.test(window.location.href)) {
+        console.log("Ignore:", window.location.href);
+        return;
+    }
     const pre = document.querySelector("pre");
     const tiles = document.createElement("div");
     const heading = document.createElement("div");
@@ -34,7 +40,7 @@ function init() {
     attack.classList.add("attack");
     defend.classList.add("defend");
     heading.classList.add("heading");
-    
+
     tiles.classList.add("tiles");
     tiles.append(heading);
     tiles.append(attack);
@@ -43,49 +49,25 @@ function init() {
     pre.append(tiles);
 
 
-    //   var tbl = findTables();
-    //   var players = [
-    //     parseTableData(tbl[0]), // attacker
-    //     parseTableData(tbl[1]) // defender
-    //   ];
-    //   var collection = [].concat.apply([], players.map(player => player.creatures));
+    const stateData = {
+        ...findTables(),
+        ...getBattleMetadata()
+    }
 
-    // Merge the terrain data and player occupation
-    //   const { code } = getBattleMetadata();
-
-    //   const battleMap = Object.assign({}, terrains.fromCode(name).battlemap);
-
-    // Object.keys(battleMap).forEach(key => {
-    //     const value = battleMap[key] || "none";
-    //     battleMap[key] = {
-    //         hazard: value,
-    //         latlong: key
-    //     };
-    // });
-
-    // collection.forEach(row => {
-    //     const { latlong } = row;
-    //     if (!latlong) return;
-    //     const { hazard } = battleMap[latlong];
-    //     battleMap[latlong] = {
-    //         hazard,
-    //         ...row
-    //     };
-    // });
+    console.log(stateData);
 
     const battleMap = ascii(pre.innerText);
-    console.log(battleMap)
+    console.log(battleMap);
 
     heading.innerHTML = `<strong>${battleMap.terrain}</strong>`;
+
+    // Namespace for CSS .none styling
     tiles.classList.add(battleMap.terrain.toLowerCase());
 
     Object.values(battleMap.hexmap).forEach(tile => {
-        console.log(tile)
         const { latlong, color, hazard, creature, damage } = tile;
-        hexagon(latlong, color, hazard, creature, damage, tiles);
+        hexagon(latlong, color, hazard, creature, damage, tiles, stateData);
     });
-
-
 }
 
 // To render the correct BattleLand terrain we need
@@ -106,11 +88,35 @@ function getBattleMetadata() {
 
 function findTables(classname = "headercenter") {
     var headercenter = document.getElementsByClassName(classname);
-    var players = [];
+    var tables = [];
     for (var i = 0; i < headercenter.length; i++) {
         if (/(attacker|defender)/i.test(headercenter[i].innerText)) {
-            players.push(headercenter[i].parentNode.parentNode);
+            tables.push(headercenter[i].parentNode.parentNode);
         }
     }
-    return players;
+    const state = {};
+    const players = tables.map(parseTableData);
+    players.forEach(table => {
+        const player = /^attack/i.test(table.header) ? "attacker" : "defender";
+        let { color, icon, pointValue, creatures } = table;
+        state[player] = { color, icon, pointValue };
+        state.creatures = state.creatures || [];
+        creatures = creatures.map(item => ({...item, player}))
+        state.creatures.push(...creatures);
+    });
+
+    return state;
+}
+
+async function postToServer(action, data) {
+    const { origin, pathname } = window.location;
+    const root = pathname.replace(/[^\/]+$i/, "");
+    fetch(`${origin}${root}/${action}`, { credentials: "same-origin" })
+        .then(response => response.text())
+        .then(result => {
+            console.log("Success:", result);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
 }
