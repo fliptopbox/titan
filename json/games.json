@@ -35,9 +35,9 @@
         ],
         "legions": [
             [5, 6000, 509, { "centaur": 2, "gargoyle": 1, "titan": 1 }],
-            [5, 100, 511, { "ogre": 2, "gargoyle": 1, "angel": 1 }],
+            [5, 101, 511, { "ogre": 2, "gargoyle": 1, "angel": 1 }],
             [1, 7, 102, { "centaur": 2, "gargoyle": 1, "titan": 1 }],
-            [1, 14, 106, { "ogre": 2, "gargoyle": 1, "angel": 1 }]
+            [1, 41, 106, { "ogre": 2, "gargoyle": 1, "angel": 1 }]
         ]
     },
     "bbb": {

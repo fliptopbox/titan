@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "TITAN for ACTS",
+    "version": "0.1",
+    "icons": {
+        "16": "images/icon-s-16.png",
+        "48": "images/icon-s-48.png",
+        "128": "images/icon-s-128.png"
+    },
+    "description": "",
+    "permissions": [
+        "tabs",
+        "notifications",
+        "activeTab",
+        "storage",
+        "contextMenus",
+        "<all_urls>"
+    ],
+    "background": {
+        "page": "./html/background.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://acts.warhorsesim.com/ttn/*"],
+            "css": ["css/content.css"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "options_page": "html/options.html",
+    "browser_action": {
+        "default_icon": "images/icon-s-48.png",
+        "default_title": "Battlelands overlay for ACTS",
+        "default_popup": "html/popup.html"
+    },
+
+    "web_accessible_resources": [
+        "images/*",
+        "js/*"
+    ]
+}

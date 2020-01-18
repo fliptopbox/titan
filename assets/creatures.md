@@ -3,7 +3,7 @@
 # Creatures
 
 
-![a](./creatures/a.png) ![b](./creatures/b.png) ![a](./creatures/c.png) ![a](./creatures/d.png) ![a](./creatures/e.png) ![a](./creatures/f.png) ![a](./creatures/g.png) ![a](./creatures/h.png) ![a](./creatures/i.png) ![a](./creatures/j.png) ![a](./creatures/k.png) ![a](./creatures/l.png) ![a](./creatures/m.png) ![a](./creatures/n.png) ![a](./creatures/o.png) ![a](./creatures/p.png) ![a](./creatures/q.png) ![a](./creatures/r.png) ![a](./creatures/s.png) ![a](./creatures/t.png) ![a](./creatures/u.png) ![a](./creatures/v.png) ![a](./creatures/w.png) ![a](./creatures/x.png)
+![a](./creatures/png/a.png) ![b](./creatures/png/b.png) ![a](./creatures/png/c.png) ![a](./creatures/png/d.png) ![a](./creatures/png/e.png) ![a](./creatures/png/f.png) ![a](./creatures/png/g.png) ![a](./creatures/png/h.png) ![a](./creatures/png/i.png) ![a](./creatures/png/j.png) ![a](./creatures/png/k.png) ![a](./creatures/png/l.png) ![a](./creatures/png/m.png) ![a](./creatures/png/n.png) ![a](./creatures/png/o.png) ![a](./creatures/png/p.png) ![a](./creatures/png/q.png) ![a](./creatures/png/r.png) ![a](./creatures/png/s.png) ![a](./creatures/png/t.png) ![a](./creatures/png/u.png) ![a](./creatures/png/v.png) ![a](./creatures/png/w.png) ![a](./creatures/png/x.png)
 
 ## creature details
 

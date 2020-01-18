@@ -1,47 +1,25 @@
-import board from "../json/titan-board.json";
-import { dice, getDestinationId, getTileById, getTileByIndex } from "./utilites";
+import db from "./db";
+import Creatures from "./Creatures";
+import Legions from "./Legion";
+import Board from "./Board";
 
-// console.log(JSON.stringify(board,null, 4))
-// const d = dice(); //?
+const game = db.games["aaa"];
+const creatures = new Creatures(game);
+const legions = new Legions(game);
+const board = new Board(legions);
 
-const units = [
-    {
-        id: "600",
-        player: 200
-    },
-    {
-        id: "36",
-        player: 200
-    },
-    {
-        id: "38",
-        player: 100
-    }
-];
+// creatures.import(deceased, legions); //?
 
-// flag enimy occupation
-const territories = flagOpponents(200, board, units);
+creatures.creature("centaur").total; //?
+creatures.creature("ogre").total; //?
 
-getDestinationId("600", 3, territories)
-    .map(id => getTileById(id, territories))
-    .forEach((tile, i) => {
-        console.warn(tile.occupied ? "attack": "move", tile.id);
+// legions.legions; //? $.length
 
-    }); //?
+legions.splitLegion(102, 304, [3, 2]);
 
-// getDestinationId("600", 3, board); //?
-// getDestinationId("600", 6, board); //?
+legions.getLegion(102); //? $
+legions.getLegion(106); //? $
 
-function flagOpponents(tower, board, opponents = []) {
-    const shallow = [...board];
 
-    opponents
-        .filter(item => item.player !== tower)
-        .forEach(item => {
-            const { index } = getTileById(item.id, board);
-            shallow[index].occupied = item;
-            shallow[index];
-        });
-
-    return shallow;
-}
+board.moveLegion(102, 4, null);
+board.moveLegion(106, 4, null);
