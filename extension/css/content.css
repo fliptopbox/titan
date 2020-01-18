@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700&display=swap");
+.tiles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.69);
+    height: 562px;
+    width: 100%;
+    max-width: 620px;
+}
+.tiles .heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.3em;
+    width: 200px;
+    font-family: arial, "Open Sans Condensed", sans-serif;
+}
+.container {
+    position: absolute;
+    font-weight: 700;
+}
+.container:after {
+    display: block;
+    content: "\2B22";
+    color: rgb(235, 235, 235);
+    font-size: 104px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 10px;
+    left: 9px;
+    margin: -22px 0 0 -5px;
+    z-index: 1;
+}
+.container .hazard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 82px;
+    height: 82px;
+    margin: 6px 9px;
+}
+
+.container:before {
+    display: block;
+    content: "\2B22";
+    color: white;
+    font-size: 122px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+    margin: -22px 0 0 -5px;
+    z-index: 0;
+}
+.hex {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 75px;
+    z-index: 5;
+    height: 100%;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .location {
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 0px 6px 1px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+} */
+.location {
+    font-family: "Open Sans Condensed", "Arial Narrow", sans-serif;
+    position: absolute;
+    top: 27px;
+    margin: 4px 20px 0;
+    left: 0;
+    border-radius: 22px;
+    background: white;
+    color: #8f8f8f;
+    padding: 8px 8px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 50px;
+    margin: auto;
+    padding: 0;
+}
+.unit:hover {
+    transform: scale(1.5);
+}
+
+.unit-name,
+.unit-icon,
+.unit-health {
+    flex: 1 0 auto;
+}
+.unit-inner {
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.unit-inner:before {
+    position: absolute;
+    border: solid white;
+    border-width: 2px 0 0 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px;
+    z-index: 7;
+    content: "";
+}
+.unit-name {
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 8px;
+    text-align: center;
+}
+.unit-icon {
+    display: block;
+    margin: 2px 0;
+}
+.unit-health {
+    height: 2px;
+    background: #ddd;
+    margin: 2px 1px 1px;
+}
+.unit-percent {
+    background: red;
+    height: 2px;
+}
+.creature {
+    width: 34px;
+    height: auto;
+    display: block;
+    margin: -4px auto -2px;
+}
+
+.tree:after {
+    color: rgb(82, 42, 17);
+}
+
+.bramble:after {
+    color: rgb(148, 194, 148);
+}
+
+.bog:after {
+    color: rgb(143, 84, 170);
+
+}
+
+.sand:after {
+    color: rgb(231, 214, 138);
+
+}
+.bramble:after {
+    color: rgb(63, 94, 67);
+
+}
+.volcano:after {
+    color: rgb(146, 47, 29);
+
+}
+.drift:after {
+    color: rgb(119, 195, 214);
+
+}
+
+.desert .sand::after {
+    color: hsla(45, 100%, 47%, 1);
+}
+
+.desert .none::after {
+    color: hsl(45, 91%, 80%);
+}
+
+.jungle .none::after,
+.brush .none::after {
+    color: hsla(93, 40%, 76%, 1);
+}
+
+.marsh .none::after {
+    color: rgba(194, 167, 157, 1);
+}
+.plains .none::after {
+    color: hsla(47, 60%, 87%, 1);
+}
+
+.swamp .none::after {
+    color: rgba(218, 202, 224, 1);
+}
+
+.tundra .none::after {
+    color: rgb(211, 227, 232);
+}
+
+.woods .none::after {
+    color: rgba(228, 240, 182, 1);
+}
+
