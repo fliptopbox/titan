@@ -1,8 +1,75 @@
 <html>
     <head>
-        <tile>popup</tile>
+        <link rel="stylesheet" href="../css/popup.css" />
     </head>
     <body>
-        <h1>popup</h1>
+        <div class="container">
+            <div class="svg battlelands">
+                <img
+                    src="../images/BattleLandsLogo.svg"
+                    alt="Battlelands Logo"
+                />
+            </div>
+            <div class="introduction">
+                The extension is a one trick pony, it overlays the ACTS view
+                battle page with graphics, inspired by the original TITAN
+                terrains, from the borad game.
+            </div>
+            <table width="100%" cellspacing="0" class="unit-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img
+                                src="../images/fresh-unit.svg"
+                                alt="fresh unit"
+                            />
+                        </td>
+                        <td>
+                            <img
+                                src="../images/damaged-unit.svg"
+                                alt="damaged unit"
+                            />
+                        </td>
+                        <td>
+                            <img
+                                src="../images/dead-unit.svg"
+                                alt="dead unit"
+                            />
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>A fresh unit, underlined by player color</td>
+                        <td>Casualies, as displayed by ACTS</td>
+                        <td>A dead unit, awaiting retaliation</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="content">
+                Clicking a unit, on the <strong>View Battle</strong> page, will
+                present their respective action page, aka the
+                <strong>View Battle Creature</strong>, where you can assign
+                damage and location.
+                <br />
+                <br />
+
+                Clicking a creature while on the
+                <strong>View Battle Creature</strong> page will return to the
+                <strong>View Battle</strong> page.
+                <br />
+                <br />
+
+                <strong>IMPORTANT:</strong> This extension does not use Google
+                Analytics, or any form of tracking, out of respect for your
+                privicy.
+                <br />
+                <br />
+                So if you want more information or encounter a bug, or have a
+                feature request, please visit my
+                <a href="https://fliptopbox.github.io/"
+                    >Github page for this extension.</a
+                >
+            </div>
+        </div>
     </body>
 </html>
