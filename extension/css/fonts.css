@@ -1,0 +1,27 @@
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Regular.ttf");
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Bold.ttf");
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 700; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Black.ttf");
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 900; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/RobotoCondensed-Regular.ttf");
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/RobotoCondensed-Bold.ttf");
+  font-family: 'Roboto Condensed';
+  font-style: bold;
+  font-weight: 700; }
+
+/*# sourceMappingURL=fonts.css.map */

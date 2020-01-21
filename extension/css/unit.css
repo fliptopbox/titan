@@ -1,0 +1,88 @@
+.unit {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  width: 64px;
+  margin: auto;
+  padding: 0; }
+  .unit-name, .unit-icon, .unit-health {
+    flex: 1 0 auto; }
+  .unit-inner {
+    height: 64px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    position: relative; }
+  .unit-name {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+    margin: 1px auto; }
+  .unit-icon {
+    display: block;
+    margin: 0; }
+  .unit-dead .icon-color {
+    fill: #cccccc; }
+  .unit-damage {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    margin: 35% auto;
+    min-width: 20px;
+    width: 10px;
+    text-align: center;
+    padding: 2px 6px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-family: "Roboto Condensed", san-serif;
+    color: white;
+    box-shadow: 0 2px 2px 0 black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-weight: 600; }
+    .unit-damage.show-damage {
+      display: block; }
+  .unit-attr {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Roboto Condensed";
+    margin: 2px 4px;
+    height: 12px;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 9px;
+    vertical-align: middle; }
+    .unit-attr-cell {
+      flex: auto;
+      flex-direction: row;
+      text-shadow: 0 1px 1px white, 1px 0 1px white, -1px 0px 1px white;
+      padding: 0 3px; }
+    .unit-attr-power {
+      text-align: left; }
+    .unit-attr-skill {
+      text-align: right; }
+    .unit-attr-rangestrike, .unit-attr-fly {
+      text-align: center; }
+    .unit-attr-rangestrike {
+      margin-top: -1px;
+      font-size: 0.9em; }
+  .unit-player {
+    background: #cccccc;
+    height: 5px;
+    width: 100%;
+    display: block; }
+  .unit-percent {
+    background: red;
+    height: 2px; }
+
+/*# sourceMappingURL=unit.css.map */
