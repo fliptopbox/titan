@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Titan
-permalink: /titan/
 ---
 # {{ "Hello World" | downcase }}
 
