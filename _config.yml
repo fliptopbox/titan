@@ -22,7 +22,7 @@ title: Titan
 email: response.write@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   TITAN a loveletter to Avalon Hill, and a an age before the internet
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/titan" # the subpath of your site, e.g. /blog
 url: "https://fliptopbox.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fliptopbox13
 github_username:  fliptopbox
