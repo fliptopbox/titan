@@ -1,0 +1,60 @@
+@import 'variables';
+
+.player {
+    &-color {
+        &-red {
+            .unit-damage,
+            .unit-player {
+                background: $playerRed;
+            }
+            .creature.titan .icon-color {
+                fill: $playerRed;
+            }
+        }
+        &-black {
+            .unit-damage,
+            .unit-player {
+                background: $playerBlack;
+            }
+            .creature.titan .icon-color {
+                fill: $playerBlack;
+            }
+        }
+        &-brown {
+            .unit-damage,
+            .unit-player {
+                background: $playerBrown;
+            }
+            .creature.titan .icon-color{
+                fill: $playerBrown;
+            }
+        }
+        &-green {
+            .unit-damage,
+            .unit-player {
+                background: $playerGreen;
+            }
+            .creature.titan .icon-color {
+                fill: $playerGreen;
+            }
+        }
+        &-blue {
+            .unit-damage,
+            .unit-player {
+                background: $playerBlue;
+            }
+            .creature.titan .icon-color {
+                fill: $playerBlue;
+            }
+        }
+        &-gold {
+            .unit-damage,
+            .unit-player {
+                background: $playerGold;
+            }
+            .creature.titan .icon-color {
+                fill: $playerGold;
+            }
+        }
+    }
+}

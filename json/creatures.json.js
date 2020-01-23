@@ -1,4 +1,4 @@
-{
+export default {
     "angel": {
         "name": "Angel",
         "abrv": "Ang",
@@ -200,7 +200,7 @@
         "name": "Titan",
         "abrv": "Ttn",
         "total": 6,
-        "power": 0,
+        "power": 6,
         "skill": 4,
         "requires": [],
         "native": [],

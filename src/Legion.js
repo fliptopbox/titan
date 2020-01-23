@@ -1,8 +1,3 @@
-import db from "./db";
-import Creatures from "./Creatures";
-
-Creatures; //?
-
 class Legions {
     constructor(game) {
         this.towers = [];
@@ -32,7 +27,6 @@ class Legions {
 
         if (!legion || !legion.length) return null;
 
-        legion[0];
         return legion[0];
     }
 
@@ -66,6 +60,20 @@ class Legions {
 
     getLegions(tower) {
         return this.legions.filter(item => item[0] === tower);
+    }
+
+    getLocations(tower = null) {
+        // Returns a collection of friends and foes
+        // current user (true), enemies (false)
+        const everyone = this.legions.map(legion => {
+            const [towerId, location, icon, collection] = legion;
+            const count = this.collectionToArray(collection).length;
+            // const enemy = towerId !== tower;
+            return {location, icon, count, tower: towerId}
+        })
+        if (tower === null) return everyone;
+
+        return everyone.filter(obj => obj.tower === tower);
     }
 
     listIcons(tower) {
@@ -129,28 +137,15 @@ class Legions {
 
         return nextLegion;
     }
+
+    move(icon, dice) {
+
+    }
 }
 
 export default Legions;
 
-const game = db.games["aaa"];
-const creatures = new Creatures(game);
-const legions = new Legions(game);
 
-// creatures.import(deceased, legions); //?
-
-creatures.creature("centaur").total; //?
-creatures.creature("ogre").total; //?
-
-legions.legions; //? $.length
-
-legions.listIcons(1); //?
-legions.splitLegion(102, 304, [3, 2]); //?
-
-legions.legions; //? $.length
-legions.legions; //? $
-
-// legions.splitLegion(411); //?
 
 // const collection = [
 //     [5, 6000, 509, 608537233],

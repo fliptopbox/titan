@@ -1,0 +1,112 @@
+.tree:after {
+  color: white; }
+.tree .location {
+  background: black;
+  color: white; }
+
+.bramble:after {
+  color: #94c294; }
+
+.bog:after {
+  color: #8f54aa; }
+.bog .location {
+  background: #8f54aa;
+  color: white; }
+
+.sand:after {
+  color: #e7d68a; }
+
+.bramble:after {
+  color: #3f5e43; }
+
+.volcano:after {
+  color: #922f1d; }
+
+.drift:after {
+  color: #77c3d6; }
+
+.desert .sand::after {
+  color: #f0b400; }
+.desert .sand .location {
+  background: #f0b400;
+  color: white;
+  font-weight: bold; }
+.desert .none::after {
+  color: #fae39e; }
+.desert .none .location {
+  background: #eddba6;
+  color: #7d6621; }
+
+.brush .none::after {
+  color: #bfdaa9; }
+.brush .none .location {
+  background: #a5c38d;
+  color: white; }
+.brush .bramble .location {
+  background: #355038;
+  color: white; }
+
+.jungle .bramble .location {
+  background: #355038;
+  color: white; }
+
+.marsh .none::after {
+  color: #c2a79d; }
+.marsh .none .location {
+  color: white; }
+
+.plains .none::after {
+  color: #f2e9ca; }
+
+.swamp .none::after {
+  color: #dacae0; }
+
+.tundra .none::after {
+  color: #d3e3e8; }
+.tundra .location {
+  background: transparent;
+  color: white;
+  font-weight: bold; }
+
+.woods .none::after {
+  color: #e4f0b6; }
+.woods .none .location {
+  background: transparent; }
+
+.mountains .location {
+  background: transparent;
+  color: white; }
+.mountains .elevation1:after {
+  color: #645a38; }
+.mountains .elevation2:after {
+  color: #b0a06a; }
+.mountains .elevation3:after {
+  color: #e0dbc9; }
+.mountains .elevation3 .location {
+  color: black; }
+
+.hills .location {
+  background: transparent;
+  color: white; }
+.hills .elevation2:after {
+  color: #9dbf7c; }
+.hills .elevation1:after {
+  color: #618e34; }
+
+.tower .location {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5); }
+.tower .elevation1:after {
+  color: #333333; }
+.tower .elevation2:after {
+  color: #999999; }
+.tower .elevation3 .location {
+  color: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.5); }
+.tower .elevation3:after {
+  color: #eeeeee; }
+
+.jungle .none::after, .jungle .elevation1::after {
+  color: #bfdaa9; }
+
+/*# sourceMappingURL=terrains.css.map */

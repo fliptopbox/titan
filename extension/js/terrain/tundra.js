@@ -1,0 +1,33 @@
+export default {
+    code: 't',
+    name: 'Tundra',
+    battlemap: {
+        A1: 'drift',
+        A2: null,
+        A3: null,
+        B1: null,
+        B2: 'drift',
+        B3: null,
+        B4: null,
+        C1: null,
+        C2: 'drift',
+        C3: null,
+        C4: 'drift',
+        C5: 'drift',
+        D1: null,
+        D2: null,
+        D3: 'drift',
+        D4: null,
+        D5: null,
+        D6: null,
+        E1: 'drift',
+        E2: null,
+        E3: null,
+        E4: 'drift',
+        E5: null,
+        F1: null,
+        F2: 'drift',
+        F3: null,
+        F4: null
+    }
+};

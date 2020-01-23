@@ -1,0 +1,60 @@
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Regular.ttf");
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Bold.ttf");
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 700; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/Roboto-Black.ttf");
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 900; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/RobotoCondensed-Regular.ttf");
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/RobotoCondensed-Bold.ttf");
+  font-family: 'Roboto Condensed';
+  font-style: bold;
+  font-weight: 700; }
+body {
+  margin: 0;
+  padding: 40px;
+  background: #222;
+  color: white;
+  width: 260px;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 1.6;
+  color: #777777; }
+
+td {
+  font-size: 0.8em;
+  width: 33%; }
+
+a {
+  color: red; }
+
+strong {
+  font-weight: bold;
+  color: white; }
+
+.svg.battlelands {
+  display: block;
+  width: 100%;
+  text-align: center; }
+  .svg.battlelands svg.bg-color {
+    fill: #cccccc; }
+
+.introduction,
+.content {
+  font-size: 1.2em;
+  margin: 2em 0; }
+
+/*# sourceMappingURL=popup.css.map */
