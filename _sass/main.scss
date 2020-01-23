@@ -1,3 +1,108 @@
-.current {
-    color: green;
+html {
+    height: 100%;
+}
+body {
+    background: #333 url($assets+'/images/titan-board.svg') center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-family: $serif;
+    color: #222;
+}
+
+a {
+    color: #ccc;
+}
+
+nav {
+    position: fixed;
+}
+
+.container {
+    width: 100%;
+    display: block;
+
+    &.hero {
+        height: 100%;
+        display: flex;
+    }
+
+    &.white {
+        width: 100%;
+        background: #efefef;
+    }
+}
+.titan {
+    display: block;
+    background: #a898d9;
+    margin: auto;
+    padding: 5em 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 black;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 2% 0;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.disclaimer {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    color: #333333;
+    margin: 10% auto;
+}
+
+.content {
+    // display: none;
+
+}
+
+.sections {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .section {
+        flex: 0 0 auto;
+        width: 230px;
+        margin: 0 3%;
+        text-align: center;
+
+        strong {
+            display: block;
+            padding: 0 1em;
+            font-size: 1.7em;
+            line-height: 0.9;
+        }
+
+        .icon {
+            display: block;
+            height: 230px;
+            &-link {
+                &:hover {
+                    transform: rotate(-10deg);
+                }
+            display: block;
+            }
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
 }

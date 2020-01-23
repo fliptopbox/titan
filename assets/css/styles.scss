@@ -1,5 +1,13 @@
 ---
-
+title: CSS stylesheet
 ---
+
+$baseurl: "{{ site.baseurl }}";
+$assets: "#{$baseurl}/assets";
+
+$serif: "Roboto Slab", serif;
+$condensed: "Roboto Condensed", san-serif;
+$normal: "Roboto", san-serif;
+
 @import "main";
 
