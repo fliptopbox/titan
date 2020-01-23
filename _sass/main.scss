@@ -63,12 +63,21 @@ nav {
     line-height: 47px;
     text-align: center;
     color: #333333;
-    margin: 10% auto;
+    margin: 3em auto;
 }
 
 .content {
     // display: none;
+    &-columns {
+        columns: 4 5em;
+        column-gap: 20px;
+        column-fill: auto;
+        vertical-align: top;
 
+        p {
+            margin: 0 0 1em;
+        }
+    }
 }
 
 .sections {
@@ -79,9 +88,10 @@ nav {
 
     .section {
         flex: 0 0 auto;
-        width: 230px;
+        width: 20em;
         margin: 0 3%;
         text-align: center;
+        list-style: none;
 
         strong {
             display: block;
@@ -97,7 +107,7 @@ nav {
                 &:hover {
                     transform: rotate(-10deg);
                 }
-            display: block;
+                display: block;
             }
         }
 
