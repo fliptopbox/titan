@@ -6,7 +6,9 @@ permalink: /reference
 
 # LAW of **TITAN**
 
-_**DISCLAIMER** This material has been reproduced without consent. The original  game designers (Jason McAllister and David A. Trampier) are deceased, and the last known printer of the board-game (Valley Games) appears to be out of business. This material has therefore been reproduced as a convenient common reference for the online community that continue to play **[TITAN](https://en.wikipedia.org/wiki/Titan\_(board_game\))**, it is not for re-sale._
+_**DISCLAIMER** This material has been reproduced without consent. The original  game designers (Jason McAllister and David A. Trampier) are deceased, and the last known printer of the board-game (Valley Games) appears to no longer offer the product for sale. It is unclear who currently holds the copyright. This material has therefore been recreated in the public domain as a convenient common reference for the online community that continue to play **[TITAN](https://en.wikipedia.org/wiki/Titan\_\(board_game\))**, it is not for re-sale, or commercial consumption._
+
+_If you are the copyright holder, please accept my apologises and contact me and to have this material removed immediately. The graphical materials are rough facsimiles of the original art, symbolic representatives, of the original work ... there was only one David A Trampier, RIP_
 
 ---
 
@@ -15,23 +17,23 @@ _**DISCLAIMER** This material has been reproduced without consent. The original 
 1. [Introduction](#1.0)
 2. [Game equipment](#2.0)
 3. [Characters](#3.0)
-4. [legions](#4.0)
-5. [starting masterplay](#5.0)
-6. [game-turns](#6.0)
-7. [moving legions](#7.0)
-8. [teleportation](#8.0)
-9. [engagements](#9.0)
-10. [battle](#10.0)
-11. [maneuver phase](#11.0)
-13. [rangestriking](#13.0)
-14. [reinforcements](#14.0)
-15. [summoning angels](#15.0)
-16. [scoring battles](#16.0)
-17. [acquiring angels](#17.0)
-18. [mustering](#18.0)
+4. [Legions](#4.0)
+5. [Starting masterplay](#5.0)
+6. [Game-turns](#6.0)
+7. [Moving legions](#7.0)
+8. [Teleportation](#8.0)
+9. [Engagements](#9.0)
+10. [Battle](#10.0)
+11. [Maneuver phase](#11.0)
+13. [Rangestriking](#13.0)
+14. [Reinforcements](#14.0)
+15. [Summoning angels](#15.0)
+16. [Scoring battles](#16.0)
+17. [Acquiring angels](#17.0)
+18. [Mustering](#18.0)
 19. [Titans](#19.0)
-20. [game etiquette](#20.0)
-21. [shortened versions of TITAN](#21.0)
+20. [Game etiquette](#20.0)
+21. [Shortened versions of TITAN](#21.0)
 22. [Designers notes](#22.0)
 22. [Appendix charts](#appendix)
 
@@ -48,6 +50,17 @@ _**DISCLAIMER** This material has been reproduced without consent. The original 
 1.3 **TITAN** is played in a series of turns called Game-Turns. During each turn one player gets a chance to move his Legions on the Masterboard, attack other players' Legions in Engagements, and muster new characters to increase the size and strength of his Legions.
 
 1.4 **Battle** is resolved in a series of Maneuver Phases and Strike Phases during which the players involved commit the characters in their Legions to combat upon the Battleland which corresponds to the Land where the Engagement is taking place. 
+
+## SAMPLE PLAYING PIECES
+
+### LEGION MARKER:
+
+![legion](./charts/01-intro-legion.svg)
+
+### CHARACTER:
+
+![character](./charts/01-intro-character.svg)
+
 
 <a name="2.0"></a>
 ## 2.0 GAME EQUIPMENT
@@ -73,10 +86,56 @@ Characters are the basic units of the game which make up each player's forces. T
 
 3.3 Creatures are the other 19 types of characters that can be mustered from the various terrains of the Masterboard. Creatures, such as Ogres, Lions, and Dragons, form the bulk of the player's forces. Once slain, Creatures are permanently removed from the game.
 
-3.4 Each character counter displays the character's name, its silhouette, its Battle-factors, and any symbols denoting special abilities. The left hand Battle-factor is the Power-factor; this is the number of dice the character rolls when it strikes and is the number of hits it must take before it is slain. The right hand Battle-factor is the Skill-factor; this affects the character's relative skill in giving and taking damage, and is also the character's movement allowance during Battle. Some characters may have a lightning bolt and/or star symbol placed between their Battle-factors.  These symbols indicate that this character has the ability to rangestrike (*lightning bolt*) or fly (*star*).
+3.4 Each character counter displays the character's name, its silhouette, its Battle-factors, and any symbols denoting special abilities. The left hand Battle-factor is the Power-factor; this is the number of dice the character rolls when it strikes and is the number of hits it must take before it is slain. The right hand Battle-factor is the Skill-factor; this affects the character's relative skill in giving and taking damage, and is also the character's movement allowance during Battle. Some characters may have a lightning bolt and/or star symbol placed between their Battle-factors.  These symbols indicate that this character has the ability to rangestrike (*lightning bolt* 🗲) or fly (*star* ★).
 
-3.5 CHARACTER CHART (see Rulebook rear cover)
+## 3.5 CHARACTER CHART
 
+### LORDS
+
+![angel](./creatures/silhouette/angel.svg) ![archangel](./creatures/silhouette/archangel.svg) ![titan](./creatures/silhouette/titan-named.svg)
+
+| TYPE        | COUNT | POWER   | SKILL   | RANGE     |  FLY  |  VALUE   |
+| ----------- | ------- | ------- | --------- | ----- | -------- | -------- |
+| Angel       | 18     |   6     |   4     |   -       |   yes |  24      |
+| Archangel   | 6  |   9     |   4     |   -       |   yes |  36      |
+| **TITAN**   | 6  |   ??? ([see 19.1](#19.1))   |   4     |   -       |   no  |  ???     |
+
+### **DEMI-LORDS**
+![gaurdian](./creatures/silhouette/gaurdian.svg) ![warlock](./creatures/silhouette/warlock.svg)
+
+| TYPE     | COUNT | POWER | SKILL | RANGE | FLY  | VALUE |
+| -------- | ----- | ----- | ----- | ----- | ---- | ----- |
+| Guardian | 6     | 12    | 2     | -     | yes  | 24    |
+| Warlock  | 6     | 5     | 4     | 2     | no   | 20    |
+
+### **CREATURES** 
+
+![behemoth](./creatures/silhouette/behemoth.svg) ![centaur](./creatures/silhouette/centaur.svg) ![colossus](./creatures/silhouette/colossus.svg) ![cyclops](./creatures/silhouette/cyclops.svg) ![dragon](./creatures/silhouette/dragon.svg) ![gargoyle](./creatures/silhouette/gargoyle.svg)
+![giant](./creatures/silhouette/giant.svg) ![gorgon](./creatures/silhouette/gorgon.svg) ![griffon](./creatures/silhouette/griffon.svg) ![hydra](./creatures/silhouette/hydra.svg) ![lion](./creatures/silhouette/lion.svg) ![minotaur](./creatures/silhouette/minotaur.svg) ![ogre](./creatures/silhouette/ogre.svg) ![ranger](./creatures/silhouette/ranger.svg) ![serpent](./creatures/silhouette/serpent.svg) ![troll](./creatures/silhouette/troll.svg) ![unicorn](./creatures/silhouette/unicorn.svg) ![warbear](./creatures/silhouette/warbear.svg) ![wyvern](./creatures/silhouette/wyvern.svg)
+
+| TYPE     | COUNT | POWER | SKILL | RS   | FLY  | VALUE | NATIVE          |
+| -------- | ----- | ----- | ----- | ---- | ---- | ----- | --------------- |
+| Behemoth | 18    | 8     | 3     | -    | -    | 24    | Bramble         |
+| Centaur  | 25    | 3     | 4     | -    | -    | 12    |                 |
+| Colossus | 10    | 10    | 4     | -    | -    | 40    | Drift           |
+| Cyclops  | 28    | 9     | 2     | -    | -    | 18    | Bramble         |
+| Dragon   | 18    | 9     | 3     | 4    | yes  | 27    | Volcano         |
+| Gargoyle | 21    | 4     | 3     | -    | yes  | 12    | Bramble         |
+| Giant    | 18    | 7     | 4     | 3    | -    | 28    | Drift           |
+| Gorgon   | 25    | 6     | 3     | 3    | yes  | 18    | Bramble         |
+| Griffon  | 18    | 5     | 4     | -    | yes  | 20    | Sand, Dune      |
+| Hydra    | 10    | 10    | 3     | 5    | -    | 30    | Bog, Sand, Dune |
+| Lion     | 28    | 5     | 3     | -    | -    | 15    | Sand, Dune      |
+| Minotaur | 21    | 4     | 4     | 2    | -    | 16    |                 |
+| Ogre     | 25    | 6     | 2     | -    | -    | 12    | Bog             |
+| Ranger   | 28    | 4     | 4     | 2    | yes  | 16    | Bog             |
+| Serpent  | 10    | 18    | 2     | -    | -    | 36    | Bramble         |
+| Troll    | 28    | 8     | 2     | -    | -    | 16    | Drift, Bog      |
+| Unicorn  | 12    | 6     | 4     | -    | -    | 24    |                 |
+| Warbear  | 21    | 6     | 3     | -    | -    | 18    | Drift           |
+| Wyvern   | 18    | 7     | 3     | -    | yes  | 21    | Bog             |
+
+RS = Rangestrinke
 
 <a name="4.0"></a>
 ## 4.0 LEGIONS
@@ -250,7 +309,10 @@ A player may, however, choose to strike at the first character using a Strike-nu
 
 12.7 STRIKE CHART (see back of Rulebook)
 
+![warbear](./creatures/silhouette/warbear.svg)
+
 <a name="13.0"></a>
+
 ## 13.0 RANGESTRIKING
 During a Strike Phase, the player who just completed the previous Maneuver Phase is entitled to employ rangestriking; the opposing player may not employ rangestriking this Strike Phase. A rangestrike is a special strike representing thrown weapons, spells, breathing fire, etc., which is directed against one specific, nonadjacent enemy character (no carry over to another target is ever allowed).
 
@@ -269,7 +331,16 @@ The above diagram shows the possible paths that rangestrikes must take.  These p
 13.4 Rangestriking and normal striking can be employed by a player's characters in any order. All rangestrlkes do not have to be conducted at the same time. They can be conducted first, interspersed with normal strikes, or saved until all normal strikes have been conducted.
 
 <a name="13.5"></a>
-13.5 Lords (**TITAN**s, Angels, and Archangels) are immune to rangestrikes from any character except the Warlock. The rangeslrike of a Warlock is never blocked or affected by the presence of hazards or characters.  Warlocks may rangestrike four hexes with no reduction in their Skill-factor. However, a Warlock's movement and conventional strikes are subject to the normal effects of the presence of hazards and characters. Warlocks cannot rangestrike when in contact with an opposing character.  
+
+![titan](./creatures/silhouette/titan.svg) ![angel](./creatures/silhouette/angel.svg) ![archangel](./creatures/silhouette/archangel.svg)
+
+
+13.5 Lords (**TITAN**s, Angels, and Archangels) are immune to rangestrikes from any character except the Warlock.
+
+![warlock](./creatures/silhouette/warlock.svg)
+
+The rangeslrike of a Warlock is never blocked or affected by the presence of hazards or characters.  Warlocks may rangestrike four hexes with no reduction in their Skill-factor. However, a Warlock's movement and conventional strikes are subject to the normal effects of the presence of hazards and characters. Warlocks cannot rangestrike when in contact with an opposing character.  
+
 
 
 <a name="14.0"></a>
@@ -321,6 +392,10 @@ Each time a player's score attains any multiple of 100 points due to adding the 
 
 17.4 The addition of an Angel to a victorious and otherwise eligible Legion is optional. For example, a player with a Legion containing six characters may have the choice of taking an Angel which he is due for having just won a Battle end scoring enough points, or of mustering an important Creature for which he is eligible and qualified. The player has the option of taking the Angel, or taking the Creature, or of taking neither 
 
+
+
+![cyclops](./creatures/silhouette/cyclops.svg)
+
 <a name="18.0"></a>
 ## 18.0 MUSTERING
 Mustering is the voluntary process by which a Legion, which ends its move in a new Land, adds new Creatures and Demi-Lords, and is the main way by which the players increase the quantity and quality of their forces. To muster, a Legion must be both eligible and qualified to do so.  
@@ -347,6 +422,21 @@ For example, a Legion with two Ogres and one Troll can muster a Troll by showing
 A Legion is qualified to muster a Warlock if it contains the player's **TITAN** (which must be revealed as usual), or if it presently contains a Warlock.
 
 A Legion containing any three identical Creatures (three Trolls for example) is qualified to muster a Guardian. A Legion containing a Guardian can muster another Guardian 
+
+
+
+
+
+![gargoyle](./creatures/silhouette/gargoyle.svg)
+
+
+
+
+
+
+## Muster Progression Diagram
+
+![muster progression](creatures/muster-progression.svg)
 
 <a name="19.0"></a>
 ## 19.0 **TITAN**S
@@ -405,6 +495,14 @@ A game of **TITAN** can become a long affair, depending on the number of players
 
 21.3 A more drastic option to shorten the game is called **TITAN**plus. For this version Centaurs, Gargoyles, and Ogres are not used. Each player begins wish two Cyclops, two Lions, and Two Trolls instead, and these three Creature types are now considered Tower Creatures. In addition, players may use only eight Legion Markers (instead of twelve) unless they eliminate another **TITAN**, there by gaining the use of his eight markers.  **TITAN**plus eliminates much of the interesting strategy of the early game, but retains the climactic struggles with the more powerful Creatures of the end game.
 
+
+
+
+![serpent](./creatures/silhouette/serpent.svg) ![behemoth](./creatures/silhouette/behemoth.svg) ![titan](./creatures/silhouette/titan-named.svg) ![dragon](./creatures/silhouette/dragon.svg) ![lion](./creatures/silhouette/lion.svg)
+
+
+
+
 <a name="22.0"></a>
 # DESIGNER'S NOTES
 
@@ -437,6 +535,13 @@ For a current replacement parts list, send a stamped, self addressed envelope to
 ## RULES QUESTIONS
 Questions on the play of this game will be gladly answered upon receipt, if they are accompanied by a stamped, self-addressed envelope. Questions on the actual design or the evolution of the game itself cannot be answered. This type of information is available only in the pages of our bi-monthly magazine, THE GENERAL. Sorry, but absolutely no game related questions can be answered by phone.  
 
+
+
+![ogre](./creatures/silhouette/ogre.svg)
+
+
+
+
 ## **TITAN** DESIGN CREDITS
 - GAME DESIGN: Jason B. McAllister and David A. Trampier
 - GAME DEVELOPMENT: Jason B. McAllister, David A. Trampier, and Bruce C. Shelley
@@ -456,101 +561,86 @@ Questions on the play of this game will be gladly answered upon receipt, if they
 ## HAZARD CHART (11.7)
 
 ### CHARACTER
-EFFECT ON MOVEMENT: A non-flying character may not enter a hex occupied by another character. A flying character may not end its move on a hex occupied by another character. A character in contact with an enemy character may not move.
-EFFECT ON STRIKING: A character in contact with one or more enemy characters must strike at one of those characters.
-EFFECT ON RANGESTRIKING: Rangestriking may not pass through a hex occupied by a character except under three conditions: (1) the rangestriker is a Warlock; (2) the character is at the base of a Cliff and the rangestriker or target is directly atop it; or (3) the character is at a lower elevation (see Plain hex below) than both the rangestriker and target. A character in contact with an enemy character may not rangestrike
+
+![character](hazards/hazard-character.png)
+
+- EFFECT ON MOVEMENT: A non-flying character may not enter a hex occupied by another character. A flying character may not end its move on a hex occupied by another character. A character in contact with an enemy character may not move.
+
+- EFFECT ON STRIKING: A character in contact with one or more enemy characters must strike at one of those characters.
+- EFFECT ON RANGESTRIKING: Rangestriking may not pass through a hex occupied by a character except under three conditions: 
+  - (1) the rangestriker is a Warlock;
+  - (2) the character is at the base of a Cliff and the rangestriker or target is directly atop it; or
+  - (3) the character is at a lower elevation (see Plain hex below) than both the rangestriker and target. A character in contact with an enemy character may not rangestrike
 
 ### PLAIN
-EFFECT ON MOVEMENT: No effect.
-EFFECT ON STRIKING: No effect.
-EFFECT ON RANGESTRIKING: No Effect.
+![plain](hazards/hazard-plain.png)
+
+- EFFECT ON MOVEMENT: No effect.
+- EFFECT ON STRIKING: No effect.
+- EFFECT ON RANGESTRIKING: No Effect.
+
 (Difference in shade serve to distinguish between different elevations, lighter shades being higher.)
 
 ### TREE
-EFFECT ON MOVEMENT: Entry forbidden to all non-flying characters. A flying character cannot end his move on a Tree hex.
-EFFECT ON STRIKING: No effect.
-EFFECT ON RANGESTRIKING: Rangestrikes may not pass through a Tree hex ([exceptions: see 13.5](#13.5)).
+![tree](hazards/hazard-tree.png)
+
+- EFFECT ON MOVEMENT: Entry forbidden to all non-flying characters. A flying character cannot end his move on a Tree hex.
+- EFFECT ON STRIKING: No effect.
+- EFFECT ON RANGESTRIKING: Rangestrikes may not pass through a Tree hex ([exceptions: see 13.5](#13.5)).
 
 ### BRAMBLE
-NATIVE: Gargoyle, Cyclops, Gorgon, Behemoth, Serpent.
-EFFECT ON MOVEMENT: A non-native character is slowed when entering a Bramble hex. (see 11.5).
-EFFECT ON STRIKING: A native character defending in a Bramble hex has the Strike-number needed to hit it increased by 1 if attacked by a non-native character. A nonnative character striking out of a Bramble hex has its Skill-factor reduced by 1. 
-EFFECT ON RANGESTRIKING: A native character defending in a Bramble hex has the Strike number needed to hit increased by 1 when it is the target of a rangestrike from a non-native character ([exception: see 13.5](#13.5)). A non-native rangestriker loses a Skill-factor for each intervening hex that contains Bramble. Bramble in the rangestrike
+![bramble](hazards/hazard-bramble.png)
+
+- NATIVE: Gargoyle, Cyclops, Gorgon, Behemoth, Serpent.
+- EFFECT ON MOVEMENT: A non-native character is slowed when entering a Bramble hex. (see 11.5).
+- EFFECT ON STRIKING: A native character defending in a Bramble hex has the Strike-number needed to hit it increased by 1 if attacked by a non-native character. A nonnative character striking out of a Bramble hex has its Skill-factor reduced by 1. 
+- EFFECT ON RANGESTRIKING: A native character defending in a Bramble hex has the Strike number needed to hit increased by 1 when it is the target of a rangestrike from a non-native character ([exception: see 13.5](#13.5)). A non-native rangestriker loses a Skill-factor for each intervening hex that contains Bramble. Bramble in the rangestrike
 
 ### BOG
-NATIVE: Ogre. Troll. Ranger, Wyvern Hydra.
-EFFECT ON MOVEMENT: Entry forbidden to nonflying non-native characters. A flying non-native character may not end his move on a Bog hex.
-EFFECT ON STRIKING: No effect.
-EFFECT ON RANGESTRIKING: No effect 
+![bog](hazards/hazard-bog.png)
+
+- NATIVE: Ogre. Troll. Ranger, Wyvern Hydra.
+- EFFECT ON MOVEMENT: Entry forbidden to nonflying non-native characters. A flying non-native character may not end his move on a Bog hex.
+- EFFECT ON STRIKING: No effect.
+- EFFECT ON RANGESTRIKING: No effect 
 
 ### SAND
-NATIVE: Lion, Griffon, Hydra.
-EFFECT ON MOVEMENT: Entry slows non-flying non-native characters.
-EFFECT ON STRIKING: No effect.
-EFFECT ON RANGESTRIKING: No effect.
+![sand](hazards/hazard-sand.png)
+
+- NATIVE: Lion, Griffon, Hydra.
+- EFFECT ON MOVEMENT: Entry slows non-flying non-native characters.
+- EFFECT ON STRIKING: No effect.
+- EFFECT ON RANGESTRIKING: No effect.
 
 ### DUNE
-NATIVE: Lion, Griffon, Hydra.
-EFFECT ON MOVEMENT: No effect.
-EFFECT ON STRIKING: A native character adds two dice when striking down across a Dune. A non-native character loses one die when striking up across a Dune. A strike made across non-Dune hexsides cannot carry-over up across a Dune hexside.
-EFFECT ON RANGESTRIKING: A rangestrike may cross a single Dune only if the rangestriker of target occupies the to which the Dune is connected.  A rangestrike may cross two Dunes only if the rangestriker and the target occupy those Dune’s hexes ([exception: see 13.5](#13.5)).
+![dune](hazards/hazard-dune.png)
+
+- NATIVE: Lion, Griffon, Hydra.
+- EFFECT ON MOVEMENT: No effect.
+- EFFECT ON STRIKING: A native character adds two dice when striking down across a Dune. A non-native character loses one die when striking up across a Dune. A strike made across non-Dune hexsides cannot carry-over up across a Dune hexside.
+- EFFECT ON RANGESTRIKING: A rangestrike may cross a single Dune only if the rangestriker of target occupies the to which the Dune is connected.  A rangestrike may cross two Dunes only if the rangestriker and the target occupy those Dune’s hexes ([exception: see 13.5](#13.5)).
 
 ### CLIFF
-EFFECT ON MOVEMENT: Non-flying characters may not cross Cliffs.
-EFFECT ON STRIKING: Characters cannot strike across a Cliff. Adjacent characters separated by Cliff.  Adjacent characters separated by a Cliff are not in contact with each other.
-EFFECT ON RANGESTRIKING: A rangestrike may cross a Cliff only if rangestriker is atop that Cliff and the target is not at the base of that Cliff (and vise versa). A rangestrike may cross one Cliff before or after any number of Slopes provided the rangestriker or the target occupies the hex atop the Cliff. A rangestrike may cross a Cliff/Dune combination only if the rangestriker or the target occupies the Dune’s hex and the other one occupies the Cliff’s hex.  ([exception: see 13.5](#13.5)).
+![cliff](hazards/hazard-cliff.png)
+
+- EFFECT ON MOVEMENT: Non-flying characters may not cross Cliffs.
+- EFFECT ON STRIKING: Characters cannot strike across a Cliff. Adjacent characters separated by Cliff.  Adjacent characters separated by a Cliff are not in contact with each other.
+- EFFECT ON RANGESTRIKING: A rangestrike may cross a Cliff only if rangestriker is atop that Cliff and the target is not at the base of that Cliff (and vise versa). A rangestrike may cross one Cliff before or after any number of Slopes provided the rangestriker or the target occupies the hex atop the Cliff. A rangestrike may cross a Cliff/Dune combination only if the rangestriker or the target occupies the Dune’s hex and the other one occupies the Cliff’s hex.  ([exception: see 13.5](#13.5)).
 
 ### SLOPE
-NATIVE: Ogre, Lion, Minotaur, Unicorn, Dragon, Colossus.
-EFFECTS ON MOVEMENT: A non-flying non-native is slowed when moving up across a Slope.
-EFFECT ON STRIKING: A native character adds one die when stinking down across a Slope. A non-native character loses a Skill factor when striking up across a Slope.
-EFFECT ON RANGESTRIKING: A rangestrike may cross one or two Slopes only if the hex Slope is occupied by either the rangestriker or the target. A rangestrike may cross three slopes if the rangestriker or the target is directly atop the third Slope. A rangestrike may cross a Slope or Slopes before or after crossing a Cliff if the rangestriker or target occupies the hex atop the Cliff.  ([exception: see 13.5](#13.5))
+![character](hazards/hazard-slope.png)
+
+- NATIVE: Ogre, Lion, Minotaur, Unicorn, Dragon, Colossus.
+- EFFECTS ON MOVEMENT: A non-flying non-native is slowed when moving up across a Slope.
+- EFFECT ON STRIKING: A native character adds one die when stinking down across a Slope. A non-native character loses a Skill factor when striking up across a Slope.
+- EFFECT ON RANGESTRIKING: A rangestrike may cross one or two Slopes only if the hex Slope is occupied by either the rangestriker or the target. A rangestrike may cross three slopes if the rangestriker or the target is directly atop the third Slope. A rangestrike may cross a Slope or Slopes before or after crossing a Cliff if the rangestriker or target occupies the hex atop the Cliff.  ([exception: see 13.5](#13.5))
 
 ### WALL
-EFFECT ON MOVEMENT: A non-flying character is slowed when moving up across a Wall hexside.
-EFFECT ON STRIKING: Any character gains a Skill- when striking up across Wall.
-EFFECT ON RANGESTRIKING: Any rangestrike loses a Skill-factor for each Wall that it crosses going up. A rangestrike may cross a single Wall only if the rangestriker or the target occupies the hex to which that Wall is connected.  Rangestrikes may cross two Walls only if either the rangestriker or the target occupies the Tower’s center hex one neither one occupies a hex directly beneath any of the outer Walls. ([exception: see 13.5](#13.5))
+![wall](hazards/hazard-wall.png)
 
-## CHARACTER CHART (3.5)
-
-### LORDS
-
-| TYPE        | POWER   | SKILL   | RANGE     |  FLY  |  VALUE   |
-| ----------- | ------- | ------- | --------- | ----- | -------- |
-| Angel       |   6     |   4     |   -       |   yes |  24      |
-| Archangel   |   9     |   4     |   -       |   yes |  36      |
-| **TITAN**   |   x\* ([see 19.1](#19.1))   |   4     |   -       |   no  |  ??      |
-
-### **DEMI-LORDS**
-
-| TYPE        | POWER   | SKILL   | RANGE     |  FLY  |  VALUE   |
-| ----------- | ------- | ------- | --------- | ----- | -------- |
-| Guardian    |  12     |  2      |  -        |   yes |  24      |
-| Warlock     |  5      |  4      |  2        |   no  |  20      |
-
-### **CREATURES** 
-
-| TYPE        | POWER   | SKILL   | RANGE     |  FLY  |  VALUE   |
-| ----------- | ------- | ------- | --------- | ----- | -------- |
-| Behemoth    |  8      |  3      |  -        |   no  |  24      |
-| Centaur     |  3      |  4      |  -        |   no  |  12      |
-| Colossus    |  10     |  4      |  -        |   no  |  40      |
-| Cyclops     |  9      |  2      |  -        |   no  |  18      |
-| Dragon      |  9      |  3      |  4        |   yes |  27      |
-| Gargoyle    |  4      |  3      |  -        |   yes |  12      |
-| Giant       |  7      |  4      |  3        |   no  |  28      |
-| Gorgon      |  6      |  3      |  3        |   yes |  18      |
-| Griffon     |  5      |  4      |  -        |   yes |  20      |
-| Hydra       |  10     |  3      |  5        |   no  |  30      |
-| Lion        |  5      |  3      |  -        |   no  |  15      |
-| Minotaur    |  4      |  4      |  2        |   no  |  16      |
-| Ogre        |  6      |  2      |  -        |   no  |  12      |
-| Ranger      |  4      |  4      |  2        |   yes |  16      |
-| Serpent     |  18     |  2      |  -        |   no  |  36      |
-| Troll       |  8      |  2      |  -        |   no  |  16      |
-| Unicorn     |  6      |  4      |  -        |   no  |  24      |
-| Warbear     |  6      |  3      |  -        |   no  |  18      |
-| Wyvern      |  7      |  3      |  -        |   yes |  21      |
+- EFFECT ON MOVEMENT: A non-flying character is slowed when moving up across a Wall hexside.
+- EFFECT ON STRIKING: Any character gains a Skill- when striking up across Wall.
+- EFFECT ON RANGESTRIKING: Any rangestrike loses a Skill-factor for each Wall that it crosses going up. A rangestrike may cross a single Wall only if the rangestriker or the target occupies the hex to which that Wall is connected.  Rangestrikes may cross two Walls only if either the rangestriker or the target occupies the Tower’s center hex one neither one occupies a hex directly beneath any of the outer Walls. ([exception: see 13.5](#13.5))
 
 
 
