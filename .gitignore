@@ -1,3 +1,5 @@
 tags
 *.blend1
 
+_site
+.jekyll-cache/
