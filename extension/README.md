@@ -8,7 +8,7 @@ Automated Card Tracking System (ACTS) it is a free service offered by [WARHORSE 
 
 ## Why the extension?
 
-For a while I have wanted a project where I could unintrusively improve the user interface by leveragin the Google Chrome Extenson API. ACTs is an legacy system, that uses ASCII art to render the mainboard and battlelands. To me an absolute ideal candidate for my experiment. I played TITAN alot in my youth.
+For a while I have wanted a project where I could unintrusively improve the user interface by leveragin the Google Chrome Extenson API. ACTs is an legacy system, that uses ASCII art to render the mainboard and battlelands. To me an absolute ideal candidate for my experiment. I played TITAN alot in my youth, and the functional UI is missing the graphical charm of the game.
 
 # What does it do?
 
@@ -16,7 +16,7 @@ The extension hooks onto the DOM, after the pages has rendered and parses the AS
 
 I would love to explore more complex interactions, but I would only go this with the site owners blessing :D
 
-![](./images/before.png)
-![](./images/after.png)
+# Screenshot of the before and after DOM augmentation.
+![before and after](./images/before-after.png)
 
-I you played TITAN back in the day, and miss the stunning graphics of the game, then this is for you. I guess it is a loveletter to the now deceased [David A Trampier](https://en.wikipedia.org/wiki/David_A._Trampier), RIP
+If you played TITAN back in the day, and miss the stunning graphics of the game, then this is for you. I guess it is a loveletter to the now deceased [David A Trampier](https://en.wikipedia.org/wiki/David_A._Trampier), RIP
