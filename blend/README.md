@@ -10,22 +10,16 @@ Imagine if the people that created "[WarTile](http://www.wartile.com/)" did thei
 
 # Tower
 
-![battleground-05](/home/bruce/Projects/github/titan/blend/render/battleground-06.png)
+![battleground-05](./render/battleground-06.png)
 
 
 
 # Swamp
 
-![battleground-05](/home/bruce/Projects/github/titan/blend/render/battleground-05.png)
+![battleground-05](./render/battleground-05.png)
 
+![battleground-03](./render/battleground-03.png)
 
+![battleground-02](./render/battleground-02.png)
 
-![battleground-03](/home/bruce/Projects/github/titan/blend/render/battleground-03.png)
-
-
-
-![battleground-02](/home/bruce/Projects/github/titan/blend/render/battleground-02.png)
-
-
-
-![battleground-01](/home/bruce/Projects/github/titan/blend/render/battleground-01.png)
+![battleground-01](./render/battleground-01.png)
