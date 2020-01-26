@@ -32,7 +32,7 @@ The extension hooks onto the DOM, (specifically in the Battlelands) after the pa
 
 A battle occurring in the marsh depicting TITAN and creature color (same as player's color), and creature health, the gray TROLL, is ... dead, and the damage marker is the same as the existing ACTS notation. 
 
-<img src="/home/bruce/Projects/github/titan/extension/images/view-battle.png" style="zoom:80%;" />
+<img src="./images/view-battle.png" style="zoom:80%;" />
 
 
 
@@ -40,7 +40,7 @@ A battle occurring in the marsh depicting TITAN and creature color (same as play
 
 You can see all of the graphical overlays by cycling through the respective boards on the Battleboard preview page, here is the TOWER terrain.
 
-<img src="/home/bruce/Projects/github/titan/extension/images/preview-battle-board.png" alt="preview-battle-board" style="zoom:80%;" />
+<img src="./images/preview-battle-board.png" alt="preview-battle-board" style="zoom:80%;" />
 
 I would love to explore more complex interactions, but only if got the site owners blessing :D
 
