@@ -8,7 +8,7 @@ function getBattleMetadata() {
 
     // this metadata is only available on viewbattle.asp
     if (!h4.length || !h3.length) {
-        console.warn("Battle metadata unavailable");
+        console.log("WARNING! Battle metadata unavailable");
         return null;
     }
 

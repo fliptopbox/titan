@@ -37,6 +37,7 @@ function init() {
     const attack = document.createElement('div');
     const defend = document.createElement('div');
 
+    if(!pre) return;
     pre.style.position = 'relative';
     attack.classList.add('attack');
     defend.classList.add('defend');
