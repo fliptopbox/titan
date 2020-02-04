@@ -9,7 +9,7 @@
         "48": "images/icon-s-48.png",
         "128": "images/icon-s-128.png"
     },
-    "permissions": ["*://acts.warhorsesim.com/*"],
+    "permissions": ["activeTab"],
     "background": {
         "page": "./html/background.html"
     },
