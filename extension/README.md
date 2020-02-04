@@ -35,3 +35,12 @@ You can see all of the graphical overlays by cycling through the respective boar
 I would love to explore more complex interactions, but only if got the site owners blessing :D
 
 If you played TITAN back in the day, and miss the stunning graphics of the game, then this is for you. I guess it is a love-letter to the now deceased [David A Trampier](https://en.wikipedia.org/wiki/David_A._Trampier) and Jason McAllister, the creators of the original Avalon Hill masterpiece ... RIP
+
+# Privacy Policy & GPLv3.0
+
+In compliance with the required Developer Program Policies of the Google Web Store, I hereby declare that; this extension does not use any form of usage analytics, data tracking, setting of cookies or data harvesting in any form whatsoever. The author is not affiliated with Warehorse Simulations or their Automated Card Tracking System (ACTS) service in any way.
+
+This product is a free and open source project, for the betterment of the community for which it was created, and governed by the MIT License.
+
+The source code is available on Github for public scurtiny.
+.https://github.com/fliptopbox/titan/
