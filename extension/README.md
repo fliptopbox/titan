@@ -18,7 +18,7 @@ For a while I have wanted a project where I could un-intrusively improve the use
 
 The extension hooks onto the DOM, (specifically in the Battlelands) after the page has rendered and then parses the ASCII art into a JSON schema, which is used to overlay pretty pictures and capture a click event on the injected DOM objects. It leaves original DOM intact. It's an overlay, no more, no less. And that is all it does. Nothing nefarious :D
 
-## Screenshots
+## Screen shots
 
 ### View Battle
 
@@ -36,11 +36,10 @@ I would love to explore more complex interactions, but only if got the site owne
 
 If you played TITAN back in the day, and miss the stunning graphics of the game, then this is for you. I guess it is a love-letter to the now deceased [David A Trampier](https://en.wikipedia.org/wiki/David_A._Trampier) and Jason McAllister, the creators of the original Avalon Hill masterpiece ... RIP
 
-# Privacy Policy & GPLv3.0
+# Privacy Policy and MIT Licence
 
-In compliance with the required Developer Program Policies of the Google Web Store, I hereby declare that; this extension does not use any form of usage analytics, data tracking, setting of cookies or data harvesting in any form whatsoever. The author is not affiliated with Warehorse Simulations or their Automated Card Tracking System (ACTS) service in any way.
+In compliance with the required Developer Program Policies of the Google Web Store, I hereby declare that; this extension does not use any form of usage analytics, data tracking, setting of cookies or data harvesting in any form whatsoever. The author is not affiliated with Warhorse Simulations or their Automated Card Tracking System (ACTS) service in any way.
 
-This product is a free and open source project, for the betterment of the community for which it was created, and governed by the MIT License.
+This product is a free and open source project, for the betterment of the community for which it was created, and governed by the MIT License. The source code is available on Github for public scrutiny.
 
-The source code is available on Github for public scurtiny.
-.https://github.com/fliptopbox/titan/
+https://github.com/fliptopbox/titan/
