@@ -24,15 +24,22 @@
   font-style: bold;
   font-weight: 700; }
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 40px;
-  background: #222;
-  color: white;
-  width: 260px;
+  background: #f1f1f1;
   font-family: "Roboto Condensed";
   font-size: 14px;
   line-height: 1.6;
-  color: #777777; }
+  color: #2f2f2f;
+  width: 100%;
+  max-width: 260px;
+  }
+
+ol {
+  margin: 0;
+  padding: 0 0 0 20px; }
+  ol li {
+    margin: 0 0 10px 0; }
 
 td {
   font-size: 0.8em;
@@ -43,14 +50,17 @@ a {
 
 strong {
   font-weight: bold;
-  color: white; }
+  color: black;
+  white-space: nowrap; }
 
 .svg.battlelands {
   display: block;
-  width: 100%;
-  text-align: center; }
-  .svg.battlelands svg.bg-color {
-    fill: #cccccc; }
+  width: 250px;
+  text-align: center;
+  height: auto;
+  margin: auto; }
+  .svg.battlelands .bg-color {
+    fill: #c7c7c7; }
 
 .introduction,
 .content {
