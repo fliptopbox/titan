@@ -2,6 +2,7 @@ import creature, { collection } from './creatures.js';
 import getUnit from './getUnit.js';
 
 const list = document.getElementById('list');
+collection.sort().forEach(print);
 
 function print(row) {
     const el = document.createElement('div');
@@ -36,5 +37,5 @@ function print(row) {
     el.innerHTML = `${unit}<div class="options-info">${info}${native}</div>`;
     el.classList.add('options-unit');
 
-    list.appendChild(el);
+    list.append(el);
 }
