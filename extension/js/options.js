@@ -2,7 +2,6 @@ import creature, { collection } from './creatures.js';
 import getUnit from './getUnit.js';
 
 const list = document.getElementById('list');
-collection.sort().forEach(print);
 
 function print(row) {
     const el = document.createElement('div');
