@@ -5,7 +5,7 @@ export default {
         "total": 18,
         "power": 6,
         "skill": 4,
-        "requires": [],
+        "requires": [{"points": 100}],
         "native": [],
         "fly": true,
         "range": false
@@ -16,7 +16,18 @@ export default {
         "total": 6,
         "power": 9,
         "skill": 4,
-        "requires": [],
+        "requires": [{"points": 500}],
+        "native": [],
+        "fly": true,
+        "range": true
+    },
+    "balrog": {
+        "name": "Balrog",
+        "abrv": "Bal",
+        "total": 6,
+        "power": 12,
+        "skill": 3,
+        "requires": [{"points": 300}],
         "native": [],
         "fly": true,
         "range": true
@@ -38,7 +49,7 @@ export default {
         "total": 25,
         "power": 3,
         "skill": 4,
-        "requires": [],
+        "requires": [{ "centaur": 1 }],
         "native": ["tower", "plains", "woods"],
         "fly": false,
         "range": false
@@ -76,13 +87,24 @@ export default {
         "fly": true,
         "range": true
     },
+    "ent": {
+        "name": "Ent",
+        "abrv": "Ent",
+        "total": 8,
+        "power": 8,
+        "skill": 4,
+        "requires": [{ "unicorn": 2 }],
+        "native": ["woods", "hills"],
+        "fly": false,
+        "range": true
+    },
     "gargoyle": {
         "name": "Gargoyle",
         "abrv": "Gar",
         "total": 21,
         "power": 4,
         "skill": 3,
-        "requires": [],
+        "requires": [{ "gargoyle": 1 }],
         "native": ["tower", "brush", "jungle"],
         "fly": true,
         "range": false
@@ -125,7 +147,7 @@ export default {
         "total": 6,
         "power": 12,
         "skill": 2,
-        "requires": [{ "centaur": 3 }, { "gargoyle": 3 }, { "ogre": 3 }],
+        "requires": [{ "creatures": 3}, {"guardian": 1 }],
         "native": ["tower"],
         "fly": true,
         "range": false
@@ -169,7 +191,7 @@ export default {
         "total": 25,
         "power": 6,
         "skill": 2,
-        "requires": [],
+        "requires": [{"ogre": 1}],
         "native": ["tower", "marsh", "hills"],
         "fly": false,
         "range": false
