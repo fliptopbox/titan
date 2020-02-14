@@ -1,5 +1,5 @@
 body {
-  background: #d8d8d8;
+  background: #efefef;
   height: 100%;
   width: 100%;
   padding: 0;
@@ -19,7 +19,8 @@ body {
   line-height: 0.9;
   font-family: 'Roboto Condensed';
   padding: 11px;
-  margin: 0.8em 0 1em; }
+  margin: 0.8em 0 1em;
+  font-weight: 300; }
 .options-unit {
   width: 68px;
   margin: 35px;
