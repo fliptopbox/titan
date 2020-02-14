@@ -10,6 +10,7 @@
         "128": "images/icon-s-128.png"
     },
     "permissions": ["activeTab"],
+    "options_page": "./html/options.html",
     "background": {
         "page": "./html/background.html"
     },
