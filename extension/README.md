@@ -14,6 +14,11 @@ There are also these: [TitanHD](https://apps.apple.com/gb/app/titan-hd/id4880268
 
 For a while I have wanted a project where I could un-intrusively improve the user interface by leveraging the Google Chrome Extension API. ACTs is an legacy system, that uses ASCII art to render the mainboard and battlelands. To me that is an absolutely ideal candidate. I played TITAN a lot in my youth, and missed the graphical charm of the game in their functional UI.
 
+## If you would like to test the extension ...
+
+I have created a Google Group for trusted testers, so head over to https://groups.google.com/forum/#!forum/battleacts it is an open group, come on in, the more the merrier :D Currently ONLY group members will have access to the extension.
+
+
 ![before and after](./images/before-after.png)
 
 The extension hooks onto the DOM, (specifically in the Battlelands) after the page has rendered and then parses the ASCII art into a JSON schema, which is used to overlay pretty pictures and capture a click event on the injected DOM objects. It leaves original DOM intact. It's an overlay, no more, no less. And that is all it does. Nothing nefarious :D
