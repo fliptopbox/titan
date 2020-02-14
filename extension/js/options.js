@@ -37,5 +37,5 @@ function print(row) {
     el.innerHTML = `${unit}<div class="options-info">${info}${native}</div>`;
     el.classList.add('options-unit');
 
-    list.append(el);
+    (el ? list.append(el) : null);
 }
