@@ -3,7 +3,7 @@
     "name": "Battlelands for ACTS",
     "short_name": "Battle ACTS",
     "description": "Overlays ASCII art on the battlelands with graphic elements from the original TITAN boardgame",
-    "version": "0.0.0.2",
+    "version": "0.0.0.3",
     "icons": {
         "16": "images/icon-s-16.png",
         "48": "images/icon-s-48.png",

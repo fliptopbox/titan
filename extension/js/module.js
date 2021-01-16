@@ -23,6 +23,7 @@ import ascii from './ascii.js';
 init();
 
 function init() {
+
     // Only execute on specific pages
     // (blacklist)
     const blacklist = ['game.asp', 'guest.asp', 'viewlegion.asp'].join('|');
@@ -31,6 +32,8 @@ function init() {
         console.log('Ignore:', window.location.href);
         return;
     }
+
+
     const pre = document.querySelector('pre');
     const tiles = document.createElement('div');
     const heading = document.createElement('div');
@@ -65,6 +68,8 @@ function init() {
     Object.values(battleMap.hexmap).forEach(tile => {
         hexagon(tile, tiles, stateData);
     });
+
+
 }
 
 function findTables(classname = 'headercenter') {
